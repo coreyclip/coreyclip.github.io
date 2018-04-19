@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class='main'>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WeatherPy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href='styles.css'/>
+    
+</head>
+<body class='main'>
+    <div class="container">
+        <div class='row bg-primary' >
+            <div class='col-md-4'>
+                <div class='headerbox'> 
+                    <h1> WeatherPy </h1> 
+                </div>
+            </div>
+        
+        <div class='col-md-8'>
+            <div class='row'>
+                <span class="align-right">
+                    <div class='col-md-10 center_button'>
+                        <a href="templates/comparisons.html">
+                            <button class="btn btn-info  button" type="submit">Comparisons</button>  
+                        </a>
+                        <a href="templates/data.html">
+                            <button class="btn btn-info  button" type="submit" >Data</button>   
+                        </a>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Visualizations by Latitude <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="templates/humidity.html">Humidity</a></li>
+                                <li><a href="templates/pressure.html">Pressure</a></li>
+                                <li><a href="templates/temperature.html">Temperature</a></li>
+                                <li><a href="templates/wind.html">Wind</a></li>
+                                <li><a href="templates/cities.html">Top Randomly Found Cities</a></li>
+                            </ul>
+                            </div>
+                    </div> 
+                    <div class='col-md-2'>
+                        <img src='images/weather.png' class="img-circle logo" width="80" height="80" >
+                    </div>                
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class='row'>
+            <hr>
+                <div class='col-md-8'>
+                    <img id='title_img' src='images/temp_lat.png' alt='temperature vs latitude' height="500" width="450" >
+                <p class="text-right index_p">
+                    <h6>Measuring Weather Patterns along Latitude lines</h6>
+                    For this project we randomly generated 1000 
+                    latitude/longitude values and gathered the current weather for the closest
+                    nearby city where weather was available using the  
+                    <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. 
+                    With our coordinates and weather data in hand we can get a high level perspective
+                    on how the weather varies as we move to and from the equator. 
+                    
+                </p>
+                </div>
+                
+                <div class='col-md-4 bg-success'>
+                        <div class='row'>
+                            <div class='vizbox'> 
+                                <h5> Visualizations </h5> 
+                        <div class='row'>
+                            <div class='col-sm-6'>
+                                <img class= 'thumbs' src='images/pressure_lat.png' alt='Pressure and Latitude' >
+                            </div>
+                            <div class='col-sm-6'>
+                                <img class= 'thumbs' src='images/humidity_lat.png' alt='Pressure and Latitude' >
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-6'>        
+                                <img class= 'thumbs' src='images/wind_lat.png' alt='wind speed and latitude' >   
+                            </div>
+                            <div class='col-sm-6'>
+                                <img class= 'thumbs' src='images/visibility_lat.png' alt='visibility and latitude' >
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+    </div>  
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
