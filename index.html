@@ -1,100 +1,413 @@
 <!DOCTYPE html>
-<html class='main'>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WeatherPy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href='styles.css'/>
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Corey Clippinger's github site</title>
+  <!-- Font Awesome -->
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/favicon.ico">
+  <!-- Your custom styles (optional) -->
+  <!-- this had NOTHING in it ???  -->
+  <!-- link href="css/style.css" rel="stylesheet" -->
+
+  <style>
+    /* TEMPLATE STYLES */
+    main {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+    .extra-margins {
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+
+
 </head>
-<body class='main'>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color-dark">
+      <a class="navbar-brand" href="#"><strong>Data for the Data-Deprived</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About me</a>
+          </li>
+        </ul>
+        <!--<ul class="navbar-nav nav-flex-icons">-->
+          <!--<li class="nav-item">-->
+            <!--<a class="nav-link"><i class="fa fa-facebook"></i></a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+            <!--<a class="nav-link"><i class="fa fa-twitter"></i></a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+            <!--<a class="nav-link"><i class="fa fa-instagram"></i></a>-->
+          <!--</li>-->
+        <!--</ul>-->
+      </div>
+    </nav>
+
+  </header>
+  <!--Main Navigation-->
+
+  <main>
+
+    <!--Main layout-->
     <div class="container">
-        <div class='row bg-primary' >
-            <div class='col-md-4'>
-                <div class='headerbox'> 
-                    <h1> WeatherPy </h1> 
-                </div>
+      <!--First row-->
+      <div class="row">
+        <div class="col-md-7">
+          <!--Featured image -->
+          <div class="view overlay hm-white-light z-depth-1-half">
+            <img src="https://i.imgur.com/WRuJV6r.png" class="img-fluid " alt="">
+            <div class="mask">
             </div>
-        
-        <div class='col-md-8'>
-            <div class='row'>
-                <span class="align-right">
-                    <div class='col-md-10 center_button'>
-                        <a href="templates/comparisons.html">
-                            <button class="btn btn-info  button" type="submit">Comparisons</button>  
-                        </a>
-                        <a href="templates/data.html">
-                            <button class="btn btn-info  button" type="submit" >Data</button>   
-                        </a>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Visualizations by Latitude <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="templates/humidity.html">Humidity</a></li>
-                                <li><a href="templates/pressure.html">Pressure</a></li>
-                                <li><a href="templates/temperature.html">Temperature</a></li>
-                                <li><a href="templates/wind.html">Wind</a></li>
-                                <li><a href="templates/cities.html">Top Randomly Found Cities</a></li>
-                            </ul>
-                            </div>
-                    </div> 
-                    <div class='col-md-2'>
-                        <img src='images/weather.png' class="img-circle logo" width="80" height="80" >
-                    </div>                
-                </span>
-            </div>
+          </div>
+          <br>
         </div>
+
+        <!--Main information-->
+        <div class="col-md-5">
+          <h2 class="h2-responsive wow fadeInDown">
+              Demos, Tutorials, think pieces,
+              and other content<br> <small> from Corey K. Clippinger</small>
+          </h2>
+          <hr>
+          <p>
+           <h4 class="h4-responsive wow fadeInDown">What you'll find on this site:</h4>
+            <ul class="wow fadeInUp">
+              <li>Past work I've done both professionally and for education purposes. </li>
+              <li class="red-text">Tutorials for the not yet in tech crowd</li>
+              <li>Tips and advice I give but could do a better job of following</li>
+            </ul>
+            <a href="https://gist.github.com/mrmccormack/1c3ba355f020d9901f0bb5af25f871f2" class="btn btn-primary">Get this website's template from Github</a>
+        </div>
+      </div>
+      <!--/.First row-->
+
+      <hr class="extra-margins">
+
+      <!--Second row-->
+      <div class="row">
+        <!--First columnn-->
+        <div class="col-md-4">
+          <!--Card: Python For data processing-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay hm-white-slight">
+              <img src="https://mdbootstrap.com/images/regular/city/img%20(2).jpg" class="img-fluid" alt="">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-block p-3">
+              <!--Title-->
+              <h4 class="card-title">Python for Data Analysis</h4>
+              <!--Text-->
+              <p class="card-text">I originally started programming to perform data analysis without
+                purchasing statistical software like SAS or Stata. In this section I'll demonstrate how to
+                  approach data analysis with Python from creating tables, visualizations, and statistical models.
+              </p>
+              <a href="templates/pydata.html" class="btn btn-primary">Read more</a>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--First columnn-->
+
+        <!--Second columnn-->
+        <div class="col-md-4">
+          <!--Card: SQL and NoSQL-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay hm-white-slight">
+              <img src="https://mdbootstrap.com/images/regular/city/img%20(4).jpg" class="img-fluid" alt="">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-block p-3">
+              <!--Title-->
+              <h4 class="card-title">SQL and NoSQL</h4>
+              <!--Text-->
+              <p class="card-text">SQL stands for structured query language,
+                  and is used to interact with and manage spreadsheet-like datasets.
+                  NoSQL is well, not SQL. MongoDB is a popular variant that stores data in a tree-like
+                  format rather than in tables. In this section we will explore working with both.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Second columnn-->
+
+        <!--Third columnn-->
+        <div class="col-md-4">
+          <!--Card Gathering Data-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay hm-white-slight">
+              <img src="https://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid" alt="">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-block p-3">
+              <!--Title-->
+              <h4 class="card-title">APIs and Web Scraping</h4>
+              <!--Text-->
+              <p class="card-text">Working with gathering data from the web including twitter
+                  using Python's requests and beautiful soup libraries.
+                  Developing a web scraper is a good way to immerse oneself in a new programming language
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Third columnn-->
+      </div>
+      <!--/.Second row-->
+        <!--Third row-->
+      <div class="row mt-5">
+        <!--First columnn-->
+        <div class="col-md-4">
+          <!--Card Excel-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay hm-white-slight">
+              <img src="https://mdbootstrap.com/images/regular/city/img%20(2).jpg" class="img-fluid" alt="">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-block p-3">
+              <!--Title-->
+              <h4 class="card-title">Programming and Automating Excel</h4>
+              <!--Text-->
+              <p class="card-text"> Natively programming excel with VBA and using Python's
+                xlwings to create simple yet powerful user facing programs all from the familiar comforts of
+                  microsoft's excel.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--First columnn-->
+
+        <!--Second columnn-->
+        <div class="col-md-4">
+          <!--Card Javascript-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay hm-white-slight">
+              <img src="https://mdbootstrap.com/images/regular/city/img%20(4).jpg" class="img-fluid" alt="">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-block p-3">
+              <!--Title-->
+              <h4 class="card-title">Javascript</h4>
+              <!--Text-->
+              <p class="card-text">Love it or hate it Javascript (JS) is a crucial part of
+                  adding interactivity and animations to our websites.
+                  On this page I'll demonstrate what can be done with the JS library D3 and it's derivatives
+
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Second columnn-->
+
+        <!--Third columnn-->
+        <div class="col-md-4">
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay hm-white-slight">
+              <img src="https://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid" alt="">
+              <a href="#">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-block p-3">
+              <!--Title-->
+              <h4 class="card-title">Machine Learning</h4>
+              <!--Text-->
+              <p class="card-text">
+                  training and deploying machine learning algorithms in Python, including deep learning.
+                  Remember computers are very obedient yet dumb machines.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Third columnn-->
+      </div>
+      <!--/.Third row-->
     </div>
+    <!--/.Main layout-->
+
+  </main>
+
+  <div class="container">
+
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+
+      <div class="col-md-8">
+          <h3 class="text-center mb-4">Great Content from Others</h3>
+          <ul>
+            <li><a href="https://pythonprogramming.net/">PythonProgramming.net</a></li>
+            <li><a href="https://machinelearningmastery.com/start-here/">Machinelearningmastery.com</a></li>
+            <li><a href="http://thedataface.com/data-and-eggs">Data and Eggs</a></li>
+
+          </ul>
+        <!--&lt;!&ndash; Form login &ndash;&gt;-->
+        <!--<form>-->
+          <!--<p class="h5 text-center mb-4">Sample Form</p>-->
+
+          <!--<div class="md-form">-->
+            <!--<i class="fa fa-envelope prefix grey-text"></i>-->
+            <!--<input type="text" id="defaultForm-email" class="form-control">-->
+            <!--<label for="defaultForm-email">Your email</label>-->
+          <!--</div>-->
+
+          <!--<div class="md-form">-->
+            <!--<i class="fa fa-lock prefix grey-text"></i>-->
+            <!--<input type="password" id="defaultForm-pass" class="form-control">-->
+            <!--<label for="defaultForm-pass">Your password</label>-->
+          <!--</div>-->
+
+          <!--<div class="text-center">-->
+            <!--<button class="btn btn-default">Login</button>-->
+          <!--</div>-->
+        <!--</form>-->
+        <!--&lt;!&ndash; Form login &ndash;&gt;-->
+
+
+      </div>
+
+      <div class="col-md-3">
+
+      </div>
+
+    </div>
+    </div>
+
+  <!--Footer-->
+  <footer class="page-footer primary-color-dark center-on-small-only">
+
+    <!--Footer Links-->
     <div class="container">
-        <div class='row'>
-            <hr>
-                <div class='col-md-8'>
-                    <img id='title_img' src='images/temp_lat.png' alt='temperature vs latitude' height="500" width="450" >
-                <p class="text-right index_p">
-                    <h6>Measuring Weather Patterns along Latitude lines</h6>
-                    For this project we randomly generated 1000 
-                    latitude/longitude values and gathered the current weather for the closest
-                    nearby city where weather was available using the  
-                    <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. 
-                    With our coordinates and weather data in hand we can get a high level perspective
-                    on how the weather varies as we move to and from the equator. 
-                    
-                </p>
-                </div>
-                
-                <div class='col-md-4 bg-success'>
-                        <div class='row'>
-                            <div class='vizbox'> 
-                                <h5> Visualizations </h5> 
-                        <div class='row'>
-                            <div class='col-sm-6'>
-                                <img class= 'thumbs' src='images/pressure_lat.png' alt='Pressure and Latitude' >
-                            </div>
-                            <div class='col-sm-6'>
-                                <img class= 'thumbs' src='images/humidity_lat.png' alt='Pressure and Latitude' >
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-sm-6'>        
-                                <img class= 'thumbs' src='images/wind_lat.png' alt='wind speed and latitude' >   
-                            </div>
-                            <div class='col-sm-6'>
-                                <img class= 'thumbs' src='images/visibility_lat.png' alt='visibility and latitude' >
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>       
+      <div class="row">
+
+        <!--&lt;!&ndash;First column&ndash;&gt;-->
+        <!--<div class="col-md-6">-->
+          <!--<h5 class="title">Footer Content</h5> &copy; 2017 <a href="https://mdbootstrap.com"> MDBootstrap.com </a>-->
+          <!--<p>-->
+            <!--Built with <i style="color:red;" class="fa fa-heart faa-pulse animated"></i> by Rob McCormack on Github.com <br>-->
+            <!--<a href="https://validator.w3.org/nu/?doc=http://mrmccormack.com/mdbootstrap-template-cdn.html" target="_blank"><small>• HTML valid • </small></a>-->
+          <!--</p>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;/.First column&ndash;&gt;-->
+
+        <!--Second column-->
+        <div class="col-md-6">
+          <h5 class="title">Links</h5>
+          <ul>
+            <li><a href="https://github.com/coreyclip?page=2&tab=repositories">My github</a></li>
+          </ul>
         </div>
+        <!--/.Second column-->
+      </div>
     </div>
-    </div>  
+    <!--/.Footer Links-->
+
+
+  </footer>
+  <!--/.Footer-->
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+
+  <script>
+    wow = new WOW().init();
+  </script>
 </body>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </html>
