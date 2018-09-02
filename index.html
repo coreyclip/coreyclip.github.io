@@ -55,17 +55,13 @@
             <a class="nav-link" href="#">About me</a>
           </li>
         </ul>
-        <!--<ul class="navbar-nav nav-flex-icons">-->
-          <!--<li class="nav-item">-->
-            <!--<a class="nav-link"><i class="fa fa-facebook"></i></a>-->
-          <!--</li>-->
-          <!--<li class="nav-item">-->
-            <!--<a class="nav-link"><i class="fa fa-twitter"></i></a>-->
-          <!--</li>-->
-          <!--<li class="nav-item">-->
-            <!--<a class="nav-link"><i class="fa fa-instagram"></i></a>-->
-          <!--</li>-->
-        <!--</ul>-->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/corey-clippinger-8033b825/">linkedin<i class="fa "></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/coreyclip">github<i class="fa "></i></a>
+          </li>
       </div>
     </nav>
 
@@ -75,13 +71,28 @@
   <main>
 
     <!--Main layout-->
-    <div class="container">
+    <div class="container-fluid">
+        <div class="row">
+                    <!--left side bar-->
+        <div class="col-md-2">
+            <h3 class="text-left mb-4 mt-2 wow fadeInUp">Content I follow</h3>
+              <ul class="wow fadeInUp">
+                <li><a href="https://pythonprogramming.net/">PythonProgramming.net</a></li>
+                <li><a href="https://machinelearningmastery.com/start-here/">Machinelearningmastery.com</a></li>
+                <li><a href="http://thedataface.com/data-and-eggs">Data and Eggs</a></li>
+
+              </ul>
+
+
+        </div>
+        <!--main right panel-->
+      <div class="col-md-10">
       <!--First row-->
       <div class="row">
         <div class="col-md-7">
           <!--Featured image -->
           <div class="view overlay hm-white-light z-depth-1-half">
-            <img src="https://i.imgur.com/WRuJV6r.png" class="img-fluid " alt="">
+            <img src="https://pli.io/njbNq.png" class="img-fluid " alt="">
             <div class="mask">
             </div>
           </div>
@@ -89,6 +100,7 @@
         </div>
 
         <!--Main information-->
+
         <div class="col-md-5">
           <h2 class="h2-responsive wow fadeInDown">
               Demos, Tutorials, think pieces,
@@ -103,6 +115,9 @@
               <li>Tips and advice I give but could do a better job of following</li>
             </ul>
             <a href="https://gist.github.com/mrmccormack/1c3ba355f020d9901f0bb5af25f871f2" class="btn btn-primary">Get this website's template from Github</a>
+
+
+
         </div>
       </div>
       <!--/.First row-->
@@ -111,14 +126,15 @@
 
       <!--Second row-->
       <div class="row">
-        <!--First columnn-->
-        <div class="col-md-4">
-          <!--Card: Python For data processing-->
+
+          <!--column-->
+        <div class="col-md-6">
+          <!--Card: LPI-->
           <div class="card">
 
             <!--Card image-->
             <div class="view overlay hm-white-slight">
-              <img src="https://mdbootstrap.com/images/regular/city/img%20(2).jpg" class="img-fluid" alt="">
+              <img src="https://pli.io/njRNx.png" class="img-center" alt="">
               <a href="#">
                 <div class="mask"></div>
               </a>
@@ -128,13 +144,15 @@
             <!--Card content-->
             <div class="card-block p-3">
               <!--Title-->
-              <h4 class="card-title">Python for Data Analysis</h4>
+              <h4 class="card-title">Peace Corps ESL Effectiveness Study</h4>
               <!--Text-->
-              <p class="card-text">I originally started programming to perform data analysis without
-                purchasing statistical software like SAS or Stata. In this section I'll demonstrate how to
-                  approach data analysis with Python from creating tables, visualizations, and statistical models.
+              <p class="card-text">
+                This is essentially one long Jupyter Notebook being used in the way Jupyter was intended for!
+                As a flexible platform to both program and a detail research in one document. Here you can not only
+                learn about the state of English Language education in Kosovo, but also see get a good demonstration of
+                data mining techniques with Pandas and static graphing with Matplotlib and Seaborn.
               </p>
-              <a href="templates/pydata.html" class="btn btn-primary">Read more</a>
+              <a href="https://github.com/coreyclip/Peace-Corps-LPI-Analysis/blob/master/LPI%20Notebook.ipynb" class="btn btn-primary">Read more</a>
             </div>
             <!--/.Card content-->
 
@@ -144,13 +162,13 @@
         <!--First columnn-->
 
         <!--Second columnn-->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <!--Card: SQL and NoSQL-->
           <div class="card">
 
             <!--Card image-->
             <div class="view overlay hm-white-slight">
-              <img src="https://mdbootstrap.com/images/regular/city/img%20(4).jpg" class="img-fluid" alt="">
+              <img src="https://pli.io/njrlg.png" class="img-fluid" alt="">
               <a href="#">
                 <div class="mask"></div>
               </a>
@@ -160,59 +178,29 @@
             <!--Card content-->
             <div class="card-block p-3">
               <!--Title-->
-              <h4 class="card-title">SQL and NoSQL</h4>
+              <h4 class="card-title">Donor's Choose Grant Application Rater</h4>
               <!--Text-->
-              <p class="card-text">SQL stands for structured query language,
-                  and is used to interact with and manage spreadsheet-like datasets.
-                  NoSQL is well, not SQL. MongoDB is a popular variant that stores data in a tree-like
-                  format rather than in tables. In this section we will explore working with both.
+              <p class="card-text">
+                This was a group project I did while at UCI. My group mates and I were
+                interested in doing something with natural language processing along with
+                doing creating ML tools that provide social goods. Our web app mirrors the
+                application process of <a href="https://www.donorschoose.org/"> donorschoose.org</a>
+                a kickstarter-esque platform for teacher to sumbit grant proposals to the public.
+                But instead our application provides users a prediction on how well their application
+                  is likely to get funded using NLP techniques.
               </p>
-              <a href="#" class="btn btn-primary">Read more</a>
+              <a href="https://donors-choose-grant-rater.herokuapp.com/" class="btn btn-primary">Link</a>
             </div>
             <!--/.Card content-->
 
           </div>
           <!--/.Card-->
         </div>
-        <!--Second columnn-->
 
-        <!--Third columnn-->
-        <div class="col-md-4">
-          <!--Card Gathering Data-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay hm-white-slight">
-              <img src="https://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <!--/.Card image-->
-
-            <!--Card content-->
-            <div class="card-block p-3">
-              <!--Title-->
-              <h4 class="card-title">APIs and Web Scraping</h4>
-              <!--Text-->
-              <p class="card-text">Working with gathering data from the web including twitter
-                  using Python's requests and beautiful soup libraries.
-                  Developing a web scraper is a good way to immerse oneself in a new programming language
-              </p>
-              <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-            <!--/.Card content-->
-
-          </div>
-          <!--/.Card-->
-        </div>
-        <!--Third columnn-->
-      </div>
-      <!--/.Second row-->
         <!--Third row-->
       <div class="row mt-5">
         <!--First columnn-->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <!--Card Excel-->
           <div class="card">
 
@@ -228,13 +216,13 @@
             <!--Card content-->
             <div class="card-block p-3">
               <!--Title-->
-              <h4 class="card-title">Programming and Automating Excel</h4>
+              <h4 class="card-title">NoSQL and Web Scraping</h4>
               <!--Text-->
-              <p class="card-text"> Natively programming excel with VBA and using Python's
-                xlwings to create simple yet powerful user facing programs all from the familiar comforts of
-                  microsoft's excel.
+              <p class="card-text">
+                  Webscraping is a favorite topic of mine. Here I have a simple flask-NoSQL
+                  web app that scrapes information from NASA's website and hosts it on a flask server
               </p>
-              <a href="#" class="btn btn-primary">Read more</a>
+              <a href="https://github.com/coreyclip/MarScrape" class="btn btn-primary">Link</a>
             </div>
             <!--/.Card content-->
 
@@ -244,13 +232,13 @@
         <!--First columnn-->
 
         <!--Second columnn-->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <!--Card Javascript-->
           <div class="card">
 
             <!--Card image-->
             <div class="view overlay hm-white-slight">
-              <img src="https://mdbootstrap.com/images/regular/city/img%20(4).jpg" class="img-fluid" alt="">
+              <img src="https://pli.io/nj4Ku.png" class="img-fluid" alt="">
               <a href="#">
                 <div class="mask"></div>
               </a>
@@ -260,106 +248,35 @@
             <!--Card content-->
             <div class="card-block p-3">
               <!--Title-->
-              <h4 class="card-title">Javascript</h4>
-              <!--Text-->
-              <p class="card-text">Love it or hate it Javascript (JS) is a crucial part of
-                  adding interactivity and animations to our websites.
-                  On this page I'll demonstrate what can be done with the JS library D3 and it's derivatives
-
-              </p>
-              <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-            <!--/.Card content-->
-
-          </div>
-          <!--/.Card-->
-        </div>
-        <!--Second columnn-->
-
-        <!--Third columnn-->
-        <div class="col-md-4">
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay hm-white-slight">
-              <img src="https://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <!--/.Card image-->
-
-            <!--Card content-->
-            <div class="card-block p-3">
-              <!--Title-->
-              <h4 class="card-title">Machine Learning</h4>
+              <h4 class="card-title">Travel Informers</h4>
               <!--Text-->
               <p class="card-text">
-                  training and deploying machine learning algorithms in Python, including deep learning.
-                  Remember computers are very obedient yet dumb machines.
+                  This is another group project completed at UCI, here we mainly aimed at experimenting
+                  with Javascript and thinking about how to make data useful to end users. The app essentially
+                  guides users through a combination of weather stats and airline delays to give users
+                  more of an idea of how weather affects airport delays across different locales.
               </p>
-              <a href="#" class="btn btn-primary">Read more</a>
+              <a href="https://travel-informers.herokuapp.com/" class="btn btn-primary">link</a>
             </div>
             <!--/.Card content-->
 
           </div>
           <!--/.Card-->
         </div>
-        <!--Third columnn-->
+
       </div>
       <!--/.Third row-->
+          </div>
     </div>
-    <!--/.Main layout-->
 
+
+        </div>
+
+    <!--/.Main layout-->
+    </div>
   </main>
 
-  <div class="container">
 
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-3">
-      </div>
-
-      <div class="col-md-8">
-          <h3 class="text-center mb-4">Great Content from Others</h3>
-          <ul>
-            <li><a href="https://pythonprogramming.net/">PythonProgramming.net</a></li>
-            <li><a href="https://machinelearningmastery.com/start-here/">Machinelearningmastery.com</a></li>
-            <li><a href="http://thedataface.com/data-and-eggs">Data and Eggs</a></li>
-
-          </ul>
-        <!--&lt;!&ndash; Form login &ndash;&gt;-->
-        <!--<form>-->
-          <!--<p class="h5 text-center mb-4">Sample Form</p>-->
-
-          <!--<div class="md-form">-->
-            <!--<i class="fa fa-envelope prefix grey-text"></i>-->
-            <!--<input type="text" id="defaultForm-email" class="form-control">-->
-            <!--<label for="defaultForm-email">Your email</label>-->
-          <!--</div>-->
-
-          <!--<div class="md-form">-->
-            <!--<i class="fa fa-lock prefix grey-text"></i>-->
-            <!--<input type="password" id="defaultForm-pass" class="form-control">-->
-            <!--<label for="defaultForm-pass">Your password</label>-->
-          <!--</div>-->
-
-          <!--<div class="text-center">-->
-            <!--<button class="btn btn-default">Login</button>-->
-          <!--</div>-->
-        <!--</form>-->
-        <!--&lt;!&ndash; Form login &ndash;&gt;-->
-
-
-      </div>
-
-      <div class="col-md-3">
-
-      </div>
-
-    </div>
-    </div>
 
   <!--Footer-->
   <footer class="page-footer primary-color-dark center-on-small-only">
@@ -379,12 +296,12 @@
         <!--&lt;!&ndash;/.First column&ndash;&gt;-->
 
         <!--Second column-->
-        <div class="col-md-6">
-          <h5 class="title">Links</h5>
-          <ul>
-            <li><a href="https://github.com/coreyclip?page=2&tab=repositories">My github</a></li>
-          </ul>
-        </div>
+        <!--<div class="col-md-6">-->
+          <!--<h5 class="title">Links</h5>-->
+          <!--<ul>-->
+            <!--<li><a href="https://github.com/coreyclip?page=2&tab=repositories">My github</a></li>-->
+          <!--</ul>-->
+        <!--</div>-->
         <!--/.Second column-->
       </div>
     </div>
