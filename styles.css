@@ -1,3 +1,24 @@
+.body{
+    background-image:'images/desert.tif';
+}
+
+.row{
+    color:#2d2e2e;
+    margin-left:5%;
+}
+
+.navbar{
+    background-color:#716969;
+    color:snow !important;
+}
+
+.nav-item{
+    color:snow !important;
+}
+.nav-link{
+    color:snow !important;
+}
+
 .headerbox {
     height: 100px;
     padding-right: 10px;
