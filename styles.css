@@ -1,5 +1,13 @@
 .body{
-    background-image:'images/desert.tif';
+    background-image:url('images/catgarden.jpg');
+}
+
+.top-btn{
+    background-color: #437c90 !important;
+}
+
+.blog-box{
+    background-color: snow;
 }
 
 .row{
