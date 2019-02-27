@@ -1,30 +1,35 @@
-.body{
-    background-image:url('images/catgarden.jpg');
+.body {
+    background-image: url('images/catgarden.jpg');
 }
 
-.top-btn{
+code {
+    padding: inherit;
+}
+
+.top-btn {
     background-color: #437c90 !important;
 }
 
-.blog-box{
+.blog-box {
     background-color: snow;
 }
 
-.row{
-    color:#2d2e2e;
-    margin-left:5%;
+.row {
+    color: #2d2e2e;
+    margin-left: 5%;
 }
 
-.navbar{
-    background-color:#716969;
-    color:snow !important;
+.navbar {
+    background-color: #716969;
+    color: snow !important;
 }
 
-.nav-item{
-    color:snow !important;
+.nav-item {
+    color: snow !important;
 }
-.nav-link{
-    color:snow !important;
+
+.nav-link {
+    color: snow !important;
 }
 
 .headerbox {
@@ -33,22 +38,22 @@
     padding-top: 5px;
     padding-left: 5px;
     padding-bottom: 10px;
-    margin-left:3px;
+    margin-left: 3px;
     color: #fff;
     background: deepskyblue;
     font-size: 24pt
 }
 
 .vizbox {
-  height: 250px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-bottom: 10px;
-  margin-left:3px;
-  color: #fff;
-  background: deepskyblue;
-  font-size: 24pt
+    height: 250px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin-left: 3px;
+    color: #fff;
+    background: deepskyblue;
+    font-size: 24pt
 }
 
 .bodybox {
@@ -57,58 +62,58 @@
     padding: 10px;
     color: bisque;
     background: rgb(33, 126, 95);
-    
+
 }
 
 .center_button {
-  margin-top: 20pt;
+    margin-top: 20pt;
 }
 
-.button{
-  padding-left: 3pt;
-  padding-right: 2pts;
-  margin-top:5pts;
+.button {
+    padding-left: 3pt;
+    padding-right: 2pts;
+    margin-top: 5pts;
 
-  
+
 }
 
 .img {
     float: center;
-    margin:20px;
+    margin: 20px;
     padding: 40px;
     float: left;
 
 }
 
-#title_img{
-    margin:10px;
+#title_img {
+    margin: 10px;
     padding: 40px;
     float: left;
-    height:300pt;
-    width:230pts;
+    height: 300pt;
+    width: 230pts;
 
 }
 
-.index_p{
-  margin:10px;
-  padding: 10px;
-  background-color: bisque;
-  color:black;
+.index_p {
+    margin: 10px;
+    padding: 10px;
+    background-color: bisque;
+    color: black;
 }
 
 .thumbs {
-  width: 150px;
-  height: 100px;
-  padding:5px;
+    width: 150px;
+    height: 100px;
+    padding: 5px;
 }
 
 .logo {
-  
-  margin-top: 11px;
+
+    margin-top: 11px;
 }
 
 .main {
-    background:rgb(214, 234, 248)  ;
+    background: rgb(214, 234, 248);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -125,34 +130,33 @@
     border-left-color: grey;
     background-color: blanchedalmond;
     text-orientation: inherit
-    
 }
 
-.vizclr{
-  
-  background-color: #2490a0;
-  color:aquamarine;
-  margin-top:10pt;
+.vizclr {
+
+    background-color: #2490a0;
+    color: aquamarine;
+    margin-top: 10pt;
 }
 
 html {
     font-size: 1rem;
-  }
-  
-  @include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(sm) {
     html {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  }
-  
-  @include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(md) {
     html {
-      font-size: 1.4rem;
+        font-size: 1.4rem;
     }
-  }
-  
-  @include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(lg) {
     html {
-      font-size: 1.6rem;
+        font-size: 1.6rem;
     }
-  }
+}
