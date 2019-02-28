@@ -342,19 +342,23 @@
                         <div class='card-body'>
                             <h1 class='card-title'>The Quantified Self part two: Extracting Insights</h1>
                             <h2 id="running-our-first-python-script">Running our first python script</h2>
-<p>At this point it&#39;s worthwhile to give our python script a test to run to see that we&#39;ve set everything up correctly. 
-This means that you&#39;ll have to access the command line. On mac or linux that&#39;s going to be the terminal program. On windows I&#39;d highly recommend installing git and using the git bash terminal, which will come included when you install git. If for some reason you cannot install git then use Windows powershell, not the cmd.exe unless you know what you&#39;re doing. </p>
-<p>Once you have the command line open you&#39;ll need to navigate to the folder where you have your csv file and .py file. The conventional way to do this is to use the <strong>cd</strong> command which stands for &quot;change directory&quot; in unix based systems. Macs are unix based while the git bash terminal on windows mimics one. Powershell contains some but not all unix commands luckily it does have the cd command</p>
-<pre><code><span class="hljs-built_in">cd</span> Quant_yourself
-</code></pre><p>this assumes that you placed your Quant_yourself folder in either your home directory on mac or C: drive on windows. If you put it someplace else say within a folder in your home directory, then you&#39;ll have to prefix the file path like this:</p>
-<pre><code><span class="hljs-built_in">cd</span> projects/Quant_yourself
-</code></pre><p>Once you&#39;ve navigated to your project directory, you should see something like this in your terminal</p>
-<pre><code><span class="hljs-symbol">YourComputer:</span>~/Quant_yourself$
-</code></pre><p>The specifics will be different between operating systems and terminal programs but generally you should see the Quant_yourself text to the left of your cursor. </p>
-<p>Next you&#39;ll call python and have it run your first script. Type in the following command: </p>
-<pre><code>YourComputer:~/Quant_yourself$ <span class="hljs-keyword">python</span> main.<span class="hljs-keyword">py</span>
-</code></pre><p>press enter and you should see the following being read out </p>
-<pre><code>yourcomputer:Quant_yourself$ python main.py
+                            <p>At this point it&#39;s worthwhile to give our python script a test to run to see that we&#39;ve set everything up correctly.
+                                This means that you&#39;ll have to access the command line. On mac or linux that&#39;s going to be the terminal program. On windows I&#39;d highly recommend installing git and using the git bash terminal, which will come included when you install git. If for some reason you cannot install git then use Windows powershell, not the cmd.exe unless you know what you&#39;re doing. </p>
+                            <p>Once you have the command line open you&#39;ll need to navigate to the folder where you have your csv file and .py file. The conventional way to do this is to use the <strong>cd</strong> command which stands for &quot;change directory&quot; in unix based systems. Macs are unix based while the git bash terminal on windows mimics one. Powershell contains some but not all unix commands luckily it does have the cd command</p>
+                            <pre><code><span class="hljs-built_in">cd</span> Quant_yourself
+</code></pre>
+                            <p>this assumes that you placed your Quant_yourself folder in either your home directory on mac or C: drive on windows. If you put it someplace else say within a folder in your home directory, then you&#39;ll have to prefix the file path like this:</p>
+                            <pre><code><span class="hljs-built_in">cd</span> projects/Quant_yourself
+</code></pre>
+                            <p>Once you&#39;ve navigated to your project directory, you should see something like this in your terminal</p>
+                            <pre><code><span class="hljs-symbol">YourComputer:</span>~/Quant_yourself$
+</code></pre>
+                            <p>The specifics will be different between operating systems and terminal programs but generally you should see the Quant_yourself text to the left of your cursor. </p>
+                            <p>Next you&#39;ll call python and have it run your first script. Type in the following command: </p>
+                            <pre><code>YourComputer:~/Quant_yourself$ <span class="hljs-keyword">python</span> main.<span class="hljs-keyword">py</span>
+</code></pre>
+                            <p>press enter and you should see the following being read out </p>
+                            <pre><code>yourcomputer:Quant_yourself$ python main.py
 information on your dataset
 &lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 865 entries, 0 to 864
@@ -375,14 +379,15 @@ first 5 rows of the data
 2  17-Aug-2016 00:00  18-Aug-2016 00:00     ...             14898.0          0.0
 3  18-Aug-2016 00:00  19-Aug-2016 00:00     ...              6656.0          0.0
 4  19-Aug-2016 00:00  20-Aug-2016 00:00     ...              6886.0          0.0
-</code></pre><p>If you got something similar to the above, then congradulations you just ran your first python script!!</p>
-<p>This may not be much but it&#39;s a start. In this next section we&#39;ll start to move beyond what we frankly could have just done in excel. </p>
-<h1 id="quantify-yourself-part-2-open-up-a-can-of-statistics">Quantify Yourself part 2: Open up a can of Statistics</h1>
-<p>In my previous post we started with downloading and installing the Anaconda python distribution and loaded our health data csv into a Python interpretter. I know that a lot of that installation work and perhaps figuring out pathing may have been frustrating. But like anything new we do, those intial challenges and frustrations are what build experience. 
-Now that we have our data loaded it&#39;s time to start extracting insights. </p>
-<p>Open up the script from the previous part in your prefered text editor. 
-When we finished last our script should look like this:</p>
-<pre><code class="lang-python">import pandas as pd
+</code></pre>
+                            <p>If you got something similar to the above, then congradulations you just ran your first python script!!</p>
+                            <p>This may not be much but it&#39;s a start. In this next section we&#39;ll start to move beyond what we frankly could have just done in excel. </p>
+                            <h2 id="Sophisticated Statistics">More sophisticated Statistics</h1>
+                                <p>In my previous post we started with downloading and installing the Anaconda python distribution and loaded our health data csv into a Python interpretter. I know that a lot of that installation work and perhaps figuring out pathing may have been frustrating. But like anything new we do, those intial challenges and frustrations are what build experience.
+                                    Now that we have our data loaded it&#39;s time to start extracting insights. </p>
+                                <p>Open up the script from the previous part in your prefered text editor.
+                                    When we finished last our script should look like this:</p>
+                                <pre><code class="lang-python">import pandas as pd
 import numpy as np
 
 import os
@@ -393,12 +398,12 @@ df = pd.read_csv(<span class="hljs-string">"health_data.csv"</span>)
 <span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"first 5 rows of the data"</span>)</span></span>
 <span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(df.head(<span class="hljs-number">5</span>)</span></span>)
 </code></pre>
-<p>In this script the methods <strong>.info()</strong> and <strong>.head()</strong> just gave us some very bare bones but necessary information about our dataset. Next we&#39;ll go over some more sophisticated 
-things we can do with our dataset such as descriptive statistics, correlation tables, and regression analysis. We&#39;ll also go over how to export these statistics to both a text file and an excel file. </p>
-<h2 id="descriptive-stats">Descriptive Stats</h2>
-<p>Pandas has a number of built in methods that make drawing up stats extremely easy. In this first part of this tutorial series we read out information about our dataset that I would almost always check upon loading a new dataset. From both .info() and .head() I&#39;d be checking to make sure that each column has the expected number of non-null rows and that python had interpretted numbers as numbers and words as strings. That&#39;s what the <code>print(df.info())</code> line is for. And for good measure I always like to actually read out a sub-section of the dataset so I can see what python is actually seeing, and that&#39;s the purpose of this line: <code>print(df.head(5))</code>. These steps are there just to make sure our data exists as we expect it to exist, but don&#39;t necessarily help us extract insights from our data. </p>
-<p>add the following lines to the bottom of your script:</p>
-<pre><code class="lang-python">descriptive_stats = df.describe()
+                                <p>In this script the methods <strong>.info()</strong> and <strong>.head()</strong> just gave us some very bare bones but necessary information about our dataset. Next we&#39;ll go over some more sophisticated
+                                    things we can do with our dataset such as descriptive statistics, correlation tables, and regression analysis. We&#39;ll also go over how to export these statistics to both a text file and an excel file. </p>
+                                <h2 id="descriptive-stats">Descriptive Stats</h2>
+                                <p>Pandas has a number of built in methods that make drawing up stats extremely easy. In this first part of this tutorial series we read out information about our dataset that I would almost always check upon loading a new dataset. From both .info() and .head() I&#39;d be checking to make sure that each column has the expected number of non-null rows and that python had interpretted numbers as numbers and words as strings. That&#39;s what the <code>print(df.info())</code> line is for. And for good measure I always like to actually read out a sub-section of the dataset so I can see what python is actually seeing, and that&#39;s the purpose of this line: <code>print(df.head(5))</code>. These steps are there just to make sure our data exists as we expect it to exist, but don&#39;t necessarily help us extract insights from our data. </p>
+                                <p>add the following lines to the bottom of your script:</p>
+                                <pre><code class="lang-python">descriptive_stats = df.describe()
 correlation_table = df.corr()
 
 <span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Descriptive Statistics"</span>)</span></span>
@@ -407,9 +412,9 @@ correlation_table = df.corr()
 <span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">'Correlation Table'</span>)</span></span>
 <span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(correlation_table)</span></span>
 </code></pre>
-<p>In the above we are calling two new pandas.DataFrame methods and storing the results into variables that are again printed out into the console</p>
-<p>When you run this script from the terminal, you should now have output that will look something like this:</p>
-<pre><code class="lang-python">Descriptive Statistics
+                                <p>In the above we are calling two new pandas.DataFrame methods and storing the results into variables that are again printed out into the console</p>
+                                <p>When you run this script from the terminal, you should now have output that will look something like this:</p>
+                                <pre><code class="lang-python">Descriptive Statistics
        Active Calories (kcal)  Dietary Calories (cal)  Distance (mi)  Steps (count)  Weight (lb)
 count                   <span class="hljs-number">865.0</span>            <span class="hljs-number">8.650000e+02</span>     <span class="hljs-number">865.000000</span>     <span class="hljs-number">865.000000</span>   <span class="hljs-number">865.000000</span>
 mean                      <span class="hljs-number">0.0</span>            <span class="hljs-number">3.808977e+04</span>       <span class="hljs-number">3.217581</span>    <span class="hljs-number">8109.345665</span>     <span class="hljs-number">6.620182</span>
@@ -428,29 +433,34 @@ Weight (lb)                                NaN                <span class="hljs-
 
 [<span class="hljs-number">5</span> rows x <span class="hljs-number">5</span> columns]
 </code></pre>
-<p>So first let&#39;s go over what the .describe method outputed. </p>
-<p>The columns list out the columns we have in our dataset while the rows store stats for the associated column. </p>
-<ul>
-<li><p><strong>count</strong> simply the number of non-null values in a given column, my dataset is complete so each column has the same number of non-null rows: 510</p>
-</li>
-<li><p><strong>mean</strong> is just another word for the average, on average I have walked 3.73 miles in a given day.</p>
-</li>
-<li><p><strong>std</strong> short hand for standard deviation. In laymans terms a standard deviation is the range from which a value can be considered to be atypical in a probablistic context. The standard deviation for the distance I walked over this given timeframe is 2.5 miles, so a day in which I walked a signifcantly greater distance than normal would be 6.2 miles (2.5 + 3.7) while a day in which I walked significantly less would be 1.2 miles (3.7 - 2.5). For the most part the standard deviation is useful for giving context to your datapoints. </p>
-</li>
-<li><p><strong>25% , 50%, and 75%</strong> these are all just shorthand for the 25th, 50th, and 75th percentiles. Percentiles points are representations of point within the data that a proportion of the values are bellow that given point. So for example 25% of the values in the distance column are 1.7 miles or less. The 50th percentile is the point where half of our data is above this point and half is bellow. This is also the definition of the <em>median</em>. Our 75th percentile is 5.23 miles so for three quarters of this given time frame I walked less that 5.23 miles but walked that amount or more for one quarter of this given timeframe. </p>
-</li>
-<li><p><strong>max</strong> this is just shorthand for the maximum.  </p>
-</li>
-</ul>
-<p>You can see the documenation for .describe() <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html">here</a></p>
-<p>After our stats output we have our correlations table. Correlation tables are IMO an essential part of data exploration. I almost always use one as a guide for whatever next steps I take in performing data analysis and when properly visualized they can be great analytical products in their own right.</p>
-<p>A correlation table is typically presented as a matrix with identical labels on both the columns and rows. The numbers that make up the matrix are the correlation values between the corresponding row and column labels. Correlation essentially is the degree in which two phenomena appear to act in concert. If a correlation is a positive number then we can say that when <strong>A</strong> increases <strong>B</strong> also typically increases. With my dataset Step Counts and Distance in miles are almost perfectly correlated, which makes sense. We can also see that my weight is correlated positively with Dietary Calories, though to a weaker degree. </p>
-<p>A negative correlation means that as <strong>A</strong> goes up <strong>B</strong> goes down and vice versa. With my dataset, weight is negatively correlated with steps and miles traveled. And it appears that my step count is slightly more negatively correlated with my weight than miles walked, I guess short strides are better than long strides in a very granular sense.</p>
-<p>But looking at my table I noticed that I have only NaNs for my Active Calories column. NaN is python shorthand for not a number and the <strong>.corr</strong> method will put in NaNs where correlations cannot be made. The most plausible reason for this is that I didn&#39;t actually log any Active Calories, but QT Access had outputted it none the less since my smartphone was trying to track it. In the end my correlation table is simply cluttered by this column. Also looking at my </p>
-<h2 id="cleaning-up-the-slop">Cleaning up the slop</h2>
-<p>While correlation tables are useful, they have limitations in a scientific sense. But from glancing at my data it&#39;s clear that my raw data can be cleaned up a bit to get some more meaningful insights into what I have going on here. I&#39;m not sure what your health data looks like, perhaps you&#39;re extremely fastidious and have kept a dutiful log of ever calorie you consumed. If not this next session will go over just a few data wrangling techniques that can make our correlation tables a bit more accurate.</p>
-<p>the correlation values between the corresponding row and column labels. Correlation essentially is the degree in which two phenomena appear to act in concert. If a correlation is a positive number then we can say that when <strong>A</strong> increases <strong>B</strong> also increases, on average, by the degree of the correlation value. With my dataset Step Counts and Distance in miles </p>
-<p>After our stats output we have our correlations table. Correlation tables are IMO an essential part of data exploration. I almost always use one as a guide for whatever next steps I take in performing data analysis and when properly visualized they can be great analytical products in their own right. A correlation table is typically presented as a matrix with identical labels on both the columns and rows. The numbers that make up the matrix are the correlation values between the corresponding row and column labels. Correlation essentially is the degree in which two phenomena appear to act in concert. If a correlation is a positive number then we can say that when <strong>A</strong> increases <strong>B</strong> also increases, on average, by the degree of the correlation value. With my dataset Step Counts and Distance in miles  </p>
+                                <p>So first let&#39;s go over what the .describe method outputed. </p>
+                                <p>The columns list out the columns we have in our dataset while the rows store stats for the associated column. </p>
+                                <ul>
+                                    <li>
+                                        <p><strong>count</strong> simply the number of non-null values in a given column, my dataset is complete so each column has the same number of non-null rows: 510</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>mean</strong> is just another word for the average, on average I have walked 3.73 miles in a given day.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>std</strong> short hand for standard deviation. In laymans terms a standard deviation is the range from which a value can be considered to be atypical in a probablistic context. The standard deviation for the distance I walked over this given timeframe is 2.5 miles, so a day in which I walked a signifcantly greater distance than normal would be 6.2 miles (2.5 + 3.7) while a day in which I walked significantly less would be 1.2 miles (3.7 - 2.5). For the most part the standard deviation is useful for giving context to your datapoints. </p>
+                                    </li>
+                                    <li>
+                                        <p><strong>25% , 50%, and 75%</strong> these are all just shorthand for the 25th, 50th, and 75th percentiles. Percentiles points are representations of point within the data that a proportion of the values are bellow that given point. So for example 25% of the values in the distance column are 1.7 miles or less. The 50th percentile is the point where half of our data is above this point and half is bellow. This is also the definition of the <em>median</em>. Our 75th percentile is 5.23 miles so for three quarters of this given time frame I walked less that 5.23 miles but walked that amount or more for one quarter of this given timeframe. </p>
+                                    </li>
+                                    <li>
+                                        <p><strong>max</strong> this is just shorthand for the maximum. </p>
+                                    </li>
+                                </ul>
+                                <p>You can see the documenation for .describe() <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html">here</a></p>
+                                <p>After our stats output we have our correlations table. Correlation tables are IMO an essential part of data exploration. I almost always use one as a guide for whatever next steps I take in performing data analysis and when properly visualized they can be great analytical products in their own right.</p>
+                                <p>A correlation table is typically presented as a matrix with identical labels on both the columns and rows. The numbers that make up the matrix are the correlation values between the corresponding row and column labels. Correlation essentially is the degree in which two phenomena appear to act in concert. If a correlation is a positive number then we can say that when <strong>A</strong> increases <strong>B</strong> also typically increases. With my dataset Step Counts and Distance in miles are almost perfectly correlated, which makes sense. We can also see that my weight is correlated positively with Dietary Calories, though to a weaker degree. </p>
+                                <p>A negative correlation means that as <strong>A</strong> goes up <strong>B</strong> goes down and vice versa. With my dataset, weight is negatively correlated with steps and miles traveled. And it appears that my step count is slightly more negatively correlated with my weight than miles walked, I guess short strides are better than long strides in a very granular sense.</p>
+                                <p>But looking at my table I noticed that I have only NaNs for my Active Calories column. NaN is python shorthand for not a number and the <strong>.corr</strong> method will put in NaNs where correlations cannot be made. The most plausible reason for this is that I didn&#39;t actually log any Active Calories, but QT Access had outputted it none the less since my smartphone was trying to track it. In the end my correlation table is simply cluttered by this column. Also looking at my </p>
+                                <h3 id="cleaning-up-the-slop">Cleaning up the slop</h3>
+                                <p>While correlation tables are useful, they have limitations in a scientific sense. But from glancing at my data it&#39;s clear that my raw data can be cleaned up a bit to get some more meaningful insights into what I have going on here. I&#39;m not sure what your health data looks like, perhaps you&#39;re extremely fastidious and have kept a dutiful log of ever calorie you consumed. If not this next session will go over just a few data wrangling techniques that can make our correlation tables a bit more accurate.</p>
+                                <p>the correlation values between the corresponding row and column labels. Correlation essentially is the degree in which two phenomena appear to act in concert. If a correlation is a positive number then we can say that when <strong>A</strong> increases <strong>B</strong> also increases, on average, by the degree of the correlation value. With my dataset Step Counts and Distance in miles </p>
+                                <p>After our stats output we have our correlations table. Correlation tables are IMO an essential part of data exploration. I almost always use one as a guide for whatever next steps I take in performing data analysis and when properly visualized they can be great analytical products in their own right. A correlation table is typically presented as a matrix with identical labels on both the columns and rows. The numbers that make up the matrix are the correlation values between the corresponding row and column labels. Correlation essentially is the degree in which two phenomena appear to act in concert. If a correlation is a positive number then we can say that when <strong>A</strong> increases <strong>B</strong> also increases, on average, by the degree of the correlation value. With my dataset Step Counts and Distance in miles </p>
 
                         </div>
                         <!--/.Main layout-->
