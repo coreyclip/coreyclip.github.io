@@ -1,3 +1,10 @@
+
+---
+layout: post
+title: Why Program? 
+---
+
+
 # Everyone should program
 
 Or well perhaps not everyone, just as not everyone should ride a bike, or drive a car, or browse the internet. Nor will everyone program even if they could, just as not everyone wants to read a book or figure out how to pay their taxes online. But in this day and age, we take it as given that most functioning adults should gain skills such as the ability to drive a car, be literate, or put together a powerpoint presentation. In a historical sense all of the above used to be exclusive domain of specialists, who were privileged to know such elusive arts such as the how to read the written word, operate a model-T or type on a typewriter. But as the utility of such skills grew in an economic sense, skills such as typing became an assumed skill. And people, as they always have done adapted. And as more people adapted the adaptation process for others became easier. As reading and writing became more important, society produced teachers to educate the masses. When cheap automible production was possible, not only did cars proliferate but more user-friendly features for using a car proliferated. Automatic transmission wasn't a thing until a gear system was invented. 
