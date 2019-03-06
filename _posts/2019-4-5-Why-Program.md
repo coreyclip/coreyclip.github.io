@@ -1,7 +1,11 @@
+---
+published: false
+---
 
 ---
 layout: post
-title: Why Program? 
+title: Why Program?
+published: True
 ---
 
 
@@ -31,5 +35,4 @@ Learning any new skill takes time. And learning to program, is pretty open ended
 As you may have noticed watching your operating system continuously update, programs take a long time to develop. And really it's fool hardy or lazy to look at a piece of code and think of it as something etched into stone. Programs and applications are constantly rewritten and expanded upon. Your first project should be too. If you're doing some data analysis and you get to a point where you think you've uncovered all the data has to tell. It's time to add more data and mine more correlations. If your machine learning algorithm's accuracy is stellar, it's time to integrate it into a online service. If you were learning how to play an instrument, you don't just stop with one song or one genre if you really want to master the music. The same goes for programming, plus thinking up new features or extensions to your project gives you obvious new paths in your learning. 
 
 
-I personally learned to program for blogs and other free resources. This blog is nothing more than a homage to the people who put their experience into content that I freely consumed. Even if this blog is an incomprehensible heap of text. I feel compeled to create if nothing else than to offer a humble homage to those who's material helped me get to where I am today. Feel free to reach out to me on github or linkedin if you have any comments or questions and I'll do my best to help you out.  
-
+I personally learned to program for blogs and other free resources. This blog is nothing more than a homage to the people who put their experience into content that I freely consumed. Even if this blog is an incomprehensible heap of text. I feel compeled to create if nothing else than to offer a humble homage to those who's material helped me get to where I am today. Feel free to reach out to me on github or linkedin if you have any comments or questions and I'll do my best to help you out.
