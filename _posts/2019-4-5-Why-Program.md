@@ -1,7 +1,9 @@
 
 ---
 layout: post
-title: Why Program? 
+title: WhyProgram
+permalink: /WhyProgram/
+
 ---
 
 
