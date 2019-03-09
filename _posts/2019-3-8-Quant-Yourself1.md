@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Starter Data Science Project: The Quantified Self, part 1
-permalink: /WhyProgram/
-published: false 
+permalink: /Quant_yourselfpt1/
+published:true 
 ---
 
  
