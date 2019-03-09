@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paths forward  
+title: Paths Forward
 permalink: /pathsforward/
 published:true 
 ---

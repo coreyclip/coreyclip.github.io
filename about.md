@@ -10,7 +10,9 @@ permalink: /about/
 
 I currently work at a small finance company where I design and impliment technical solutions, both small and large. 
 
+I'm passionate about technology designed by and for the many. 
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[coreyclip@gmail.com](mailto:coreyclip@gmail.com)
