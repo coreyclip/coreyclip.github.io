@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background:'#efd6ac';
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: '#c44900';
 }
 
 .container {
@@ -28,12 +28,13 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  background-color:'#efd6ac'
+  background-color:'#183a37';
+  color: '#efd6ac';
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $white;
   font-weight: bold;
 
   line-height: 1.7;
@@ -118,12 +119,12 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: '#efd6ac';
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: $aliceblue;
   background: $lightGray;
 }
 ::selection {
@@ -166,8 +167,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin-right: 15px;
 
   @include mobile {
@@ -193,7 +194,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: '#432534';
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -203,7 +204,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: '#432534';
   font-size: 16px;
 
   @include mobile {
@@ -243,6 +244,7 @@ nav {
 //
 
 .posts > .post {
+  padding:.5em;
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
