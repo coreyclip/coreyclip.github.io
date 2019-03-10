@@ -1,7 +1,14 @@
+---
+layout: post
+title: Starter Data Science Project: The Quantified Self, part 2
+permalink: /Quantyourself2/
+published: false
+---
 
-# Quantify Yourself part 2: Open up a can of Statistics
+## Where we left off
 
 In my previous post we started with downloading and installing the Anaconda python distribution and loaded our health data csv into a Python interpretter. I know that a lot of that installation work and perhaps figuring out pathing may have been frustrating. But like anything new we do, those intial challenges and frustrations are what build experience. 
+
 Now that we have our data loaded it's time to start extracting insights. 
 
 Open up the script from the previous part in your prefered text editor. 
@@ -22,10 +29,10 @@ print(df.head(5))
 ```
 
 In this script the methods **.info()** and **.head()** just gave us some very bare bones but necessary information about our dataset. Next we'll go over some more sophisticated 
-things we can do with our dataset such as descriptive statistics, correlation tables, and regression analysis. We'll also go over how to export these statistics to both a text file and an excel file. 
+things we can do with our dataset such as descriptive statistics and correlation tables. We'll also go over how to export these statistics to an excel file. 
 
 ## Descriptive Stats
-Pandas has a number of built in methods that make drawing up stats extremely easy. In this first part of this tutorial series we read out information about our dataset that I would almost always check upon loading a new dataset. From both .info() and .head() I'd be checking to make sure that each column has the expected number of non-null rows and that python had interpretted numbers as numbers and words as strings. That's what the ```print(df.info())``` line is for. And for good measure I always like to actually read out a sub-section of the dataset so I can see what python is actually seeing, and that's the purpose of this line: ```print(df.head(5))```. These steps are there just to make sure our data exists as we expect it to exist, but don't necessarily help us extract insights from our data. 
+Pandas has a number of built in method[^1]s that make drawing up stats extremely easy. In this first part of this tutorial series we read out information about our dataset that I would almost always check upon loading a new dataset. From both .info() and .head() I'd be checking to make sure that each column has the expected number of non-null rows and that python had interpretted numbers as numbers and words as strings. That's what the ```print(df.info())``` line is for. And for good measure I always like to actually read out a sub-section of the dataset so I can see what python is actually seeing, and that's the purpose of this line: ```print(df.head(5))```. These steps are there just to make sure our data exists as we expect it to exist, but don't necessarily help us extract insights from our data. 
 
 add the following lines to the bottom of your script:
 
@@ -55,6 +62,7 @@ min                       0.0            0.000000e+00       0.000000       0.000
 50%                       0.0            0.000000e+00       2.528945    6545.494470     0.000000
 75%                       0.0            0.000000e+00       4.355165   10733.765974     0.000000
 max                       0.0            3.237495e+06      14.516899   33195.107360   208.600000
+Correlation Table
                         Active Calories (kcal)  Dietary Calories (cal)     ...       Steps (count)  Weight (lb)
 Active Calories (kcal)                     NaN                     NaN     ...                 NaN          NaN
 Dietary Calories (cal)                     NaN                1.000000     ...           -0.059322     0.331208
@@ -88,8 +96,120 @@ A correlation table is typically presented as a matrix with identical labels on 
 
 A negative correlation means that as **A** goes up **B** goes down and vice versa. With my dataset, weight is negatively correlated with steps and miles traveled. And it appears that my step count is slightly more negatively correlated with my weight than miles walked, I guess short strides are better than long strides in a very granular sense.
 
-But looking at my table I noticed that I have only NaNs for my Active Calories column. NaN is python shorthand for not a number and the **.corr** method will put in NaNs where correlations cannot be made. The most plausible reason for this is that I didn't actually log any Active Calories, but QT Access had outputted it none the less since my smartphone was trying to track it. In the end my correlation table is simply cluttered by this column. Also looking at my 
+But looking at my table I noticed that I have only NaNs for my Active Calories column. NaN is python shorthand for not a number and the **.corr** method will put in NaNs where correlations cannot be made. The most plausible reason for this is that I didn't actually log any Active Calories, but QT Access had outputted it none the less since my smartphone was trying to track it. In the end my correlation table is simply cluttered by this column. Next I'll show you how to remove this column prior to exporting the table to excel. 
+
+## Slicing Dataframes
+Pandas comes with many built in features for manipulating data. This blog series isn't a exhaustive overview of pandas but 
+I do want you to get a taste for what you can do with pandas. One routine task we can use pandas for is to **slice** a dataframe. Slicing involves selecting subsections of our dataframe. Slicing can happen either along the columns or rows in a dataframe. 
+In our case we want to clear out both the column and row labeled 'Active Calories (kcal)'  
+
+There are two ways of doing this that I'll show you for now. The first method involves using a label based approach. Pandas is aware that the columns and rows that makes up a given dataframe have names. In the output on your terminal the column and row labels appear on the top and left hand sides of the tables. 
+
+### label based slicing ###
+
+Pandas dataframes have a method called **.loc** that allows us to pick out what we want from our dataframe in a very straightforward manner. 
+```python
+df.loc[row_label, column_label]
+```
+What this would look like using our stats table as an example we would do something like this 
+
+```python
+descriptive_stats.loc['mean', 'Dietary Calories (cal)']
+# output: 38089.76926462494
+```
+to get more that one column you would just have to supply the column_label parameter with a list of labels
+
+```python
+descriptive_stats.loc['mean', ['Dietary Calories (cal)', 'Steps (count)']]
+```
 
 
-## Cleaning up the slop
-While correlation tables are useful, they have limitations in a scientific sense. But from glancing at my data it's clear that my raw data can be cleaned up a bit to get some more meaningful insights into what I have going on here. I'm not sure what your health data looks like, perhaps you're extremely fastidious and have kept a dutiful log of ever calorie you consumed. If not this next session will go over just a few data wrangling techniques that can make our correlation tables a bit more accurate.
+The first parameter governs which rows pandas selects, while the second governs the columns returned. Note that just using
+```python
+df.loc[row_selector]
+```
+will simply grab a subset of rows and all the columns, but if you wanted to grab all the rows and just a subset of columns 
+you would need to do something like this: 
+
+```python
+df.loc[:, 'Dietary Calories (cal)']
+```
+The : is a wild card character in pandas meaning that is shorthand for everything between, when used by itself it basically tells pandas to not bound the wild card which selects everything. 
+
+Using the : between two labels tells pandas to return everything between two labels. So say we wanted to just select the 
+dietary calories, distance, and steps columns  and just the row labeled 'mean' we could do something like this: 
+
+```python
+df.loc['mean', 'Dietary Calories':'Steps (count)']
+```
+One other use of the : wildcard is to bound it on one end and leave the other open
+
+```python
+df.loc[:, 'Active Calories (kcal)':]
+```
+This would select every column after the active calories column while 
+
+```python
+df.loc[:, :'Active Calories (kcal)']
+```
+would select everything up to the active calories column, but not that column itself
+
+### integer based slicing ###
+The other way we could do the same operations is to use numbers or more specifically integers to select pieces of our data
+to do that we use **.iloc** instead of .loc 
+
+Python is zero-indexed meaning that numbers start at 0, so to grab the first row of a dataframe one would use this line of code: 
+```python
+df.iloc[0]
+```
+Selecting the first 10 rows and second to fourth columns would look like this:
+
+```python
+df.iloc[:9, 1:3]
+```
+
+Taking what we just went over we can remove the offending row and column from our correlation table with this addition to our 
+code:
+```python
+
+cleaned_corr_table = correlation_table.loc['Dietary Calories (cal)':, 'Dietary Calories (cal)':'Weight (lb)']
+print('Cleaned Correlation table')
+print(cleaned_corr_table)
+```
+With this addition we should get something like this as our output: 
+
+```
+Correlation Table
+                        Active Calories (kcal)  Dietary Calories (cal)  Distance (mi)  Steps (count)  Weight (lb)
+Active Calories (kcal)                     NaN                     NaN            NaN            NaN          NaN
+Dietary Calories (cal)                     NaN                1.000000      -0.056050      -0.059322     0.331208
+Distance (mi)                              NaN               -0.056050       1.000000       0.988516    -0.076882
+Steps (count)                              NaN               -0.059322       0.988516       1.000000    -0.093157
+Weight (lb)                                NaN                0.331208      -0.076882      -0.093157     1.000000
+Cleaned Correlation table
+                        Dietary Calories (cal)  Distance (mi)  Steps (count)  Weight (lb)
+Dietary Calories (cal)                1.000000      -0.056050      -0.059322     0.331208
+Distance (mi)                        -0.056050       1.000000       0.988516    -0.076882
+Steps (count)                        -0.059322       0.988516       1.000000    -0.093157
+Weight (lb)                           0.331208      -0.076882      -0.093157     1.000000
+```
+
+### Exporting to Csv ###
+Finally lets go over how to export our correlation and stats tables to a csv file. 
+With pandas this is about as straightforward as reading in our initial dataset. Every pandas dataframe contains a host of 
+methods for exporting to different file formats: json, html, txt, excel, csv are some of the most handy but there are many more. 
+
+For right now we'll just export to a csv file. Comma Seperated Values (CSV) can be easily read by excel and other programming languages so by default I typically export data in this format. 
+
+At the very end of your python script add these lines: 
+
+```python 
+descriptive_stats.to_csv('descriptive stats.csv')
+cleaned_corr_table.to_csv('Correlation table.csv')
+```
+The first parameters are the file names as they will appear in your local directory. 
+
+## Up next: Jupyter notebooks 
+While correlation tables are useful, they have limitations in a scientific sense. But from glancing at my data it's clear that my raw data can be cleaned up a bit beyond just slicing the dataframe up. In order to get some more meaningful insights into what I have going on here, I'm going to have to dig deeper intot he data. I'm not sure what your health data looks like, perhaps you're extremely fastidious and have kept a dutiful log of ever calorie you consumed. If not this next session will go over just a few data wrangling techniques that can make our correlation tables a bit more accurate as well as introduce some more methods and tools to draw insight out of the data. To do this we will leave running our python code from the terminal behind for a bit and start using a fantastic tool for anaylzing data with python: jupyter notebooks. 
+
+[^1]: Methods are attributes of a class, a class is a blueprint to make an object. If you made a car, the mechanism that starts the car would be a method of the car object.  
