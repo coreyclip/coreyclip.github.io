@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starter Data Science Project: The Quantified Self, part 1
+title: Starter Data Science Project The Quantified Self, part 1
 permalink: /Quantyourself1/
 published:true 
 ---
