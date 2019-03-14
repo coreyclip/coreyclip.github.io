@@ -18,9 +18,7 @@ html {
 }
 
 body {
-	background:'#efd6ac';
   font: 18px/1.4 $helvetica;
-  color: '#c44900';
 }
 
 .container {
@@ -28,8 +26,8 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  background-color:'#183a37';
-  color: '#efd6ac';
+  background: $lightGray;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,12 +117,11 @@ img {
 
 .date {
   font-style: italic;
-  color: '#efd6ac';
+  color: $black; 
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $aliceblue;
   background: $lightGray;
 }
 ::selection {
