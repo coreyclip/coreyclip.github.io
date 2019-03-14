@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Why Program
-permalink: /WhyProgram/
-published: true
 ---
 
 

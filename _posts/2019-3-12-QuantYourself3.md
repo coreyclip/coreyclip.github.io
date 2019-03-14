@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Quant Yourself Part 3 
-permalink: /QuantYourself3/
-published: false
 ---
 
 ## Data Exploration and Cleaning in Jupyter Notebooks

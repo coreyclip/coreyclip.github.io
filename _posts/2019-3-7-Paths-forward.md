@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Paths Forward
-permalink: /pathsforward/
-published:true 
 ---
+
 # Getting started in the Programming World
 
 There are a myriad of ways to get started programming and in general I don't really prescribe to any notion that there's one or even a few **right** ways to start out. What I think is important is that you start getting into a process of producing code and seeing the results. And I think the best way to do that is to learn to code via projects. I've heard from countless people that they tried learning to program but quickly dropped off because they spent hours and hours writting scripts that really didn't do anything. I don't think it's their fault but a lot of programming tutorials out there seem to be fixated on covering all the basics until they moving on to producing actionable artifacts. I'm sure for the more orderly left brain people that makes sense, but for me personally no amount of will power is sufficient to keep me doing something that doesn't have a clear goal to strive for. What follows are a few options for what I think are pretty reasonable paths that I know of to get you programming and more importantly creating something that either you or others will find useful. I am primarily interested and practice Data Science but like many newer programmers I do a fair amount of web development work. So what I'm going offer are my recommendations for what to cover when starting out in these two fields.  

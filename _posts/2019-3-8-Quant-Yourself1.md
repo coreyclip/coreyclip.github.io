@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Starter Data Science Project The Quantified Self, part 1
-permalink: /Quantyourself1/
-published:true 
+title: Starter Data Science Project The Quantified Self 
 ---
 
-## Quant Yourself part 1: Getting started with Python
+## Getting started with Python
  
 For this series I'm going to approach introducing the tools and techniques of Data Science, in a manner I've so far not seen online yet.
 Most introductions to Data Science revolve around datasets that are already well known and with the foreknowledge of what can and cannot be extracted from it. A certain 20th century tragedy and various flower specimens come to mind. While there's not exactly wrong with learning data science through these kinds of examples, I think it removes the element of data science I personally love the most: discovery!

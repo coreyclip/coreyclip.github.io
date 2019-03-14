@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Starter Data Science Project The Quantified Self, part 2
-permalink: /Quantyourself2/
-published: true 
 ---
 
 ## Where we left off
