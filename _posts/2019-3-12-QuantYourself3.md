@@ -3,7 +3,7 @@ layout: post
 title: Quant Yourself Part 3 
 ---
 
-## Data Exploration and Cleaning in Jupyter Notebooks
+### Data Exploration and Cleaning in Jupyter Notebooks
 
 Jupyter notebooks were originally conceived of as a portable means of combining code and written research, I find them to be an excellent environment for exploring data and toying around with different data engineering operations. Jupyter notebooks are made up of text blocks in either code or markdown. Markdown is quick and efficient way of writing text and formatting all in one go. I already showed you how to write comments in code, 
 but with markdown you can write detailed explanations of what your code blocks are doing or give commentary on what's being outputted by adjacent code cells. 
@@ -19,7 +19,7 @@ In this next part we'll go over the basics of running jupyter notebooks by doing
 * splitting up our dataframes along certain conditions 
 * converting to markdown or html see: https://www.blog.pythonlibrary.org/2018/10/09/how-to-export-jupyter-notebooks-into-other-formats/ 
 
-## Starting up Jupyter lab
+### Starting up Jupyter lab
 
 If you've already installed Anaconda you already have Jupyter notebooks the base component that we'll be working with. The whole Jupyter project is moving towards it's more recent incarnation **Jupyter Lab**
 There are a lot of tutorials out there focusing on Jupyter notebooks, and if I was starting out I might be tempted to just work with Jupyter notebooks and be intimidated by Jupyter Lab. But really Jupyter lab is just better at this point and the commands and functionality I'm going to be explaining to you is basically the same across both platforms. Jupyter lab just adds very ncie quality of life features like a file menu, command tab, ability to launch a terminal, and access a text editor all in the same platform. Making it a pretty powerful and accessible Interactive Development Environment (IDE) for beginners. 

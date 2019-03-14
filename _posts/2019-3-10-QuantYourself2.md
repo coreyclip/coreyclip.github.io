@@ -3,8 +3,6 @@ layout: post
 title: Starter Data Science Project The Quantified Self, part 2
 ---
 
-## Where we left off
-
 In my previous post we started with downloading and installing the Anaconda python distribution and loaded our health data csv into a Python interpretter. I know that a lot of that installation work and perhaps figuring out pathing may have been frustrating. But like anything new we do, those intial challenges and frustrations are what build experience. 
 
 Now that we have our data loaded it's time to start extracting insights. 
