@@ -18,6 +18,7 @@ html {
 }
 
 body {
+    background: $gunmetal;
   font: 18px/1.4 $helvetica;
 }
 
@@ -26,13 +27,13 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  background: $lightGray;
+  background: $eggshell;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $white;
+  color: $gunmetal;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +62,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $ochre;
 }
 
 p {
@@ -69,11 +70,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $cordal;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $grain;
   }
 }
 
@@ -117,7 +118,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $black; 
+  color: $gunmetal; 
 }
 
 // Specify the color of the selection
@@ -194,13 +195,13 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 38px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  font-size: 16px;
+  font-size: 18px;
 
   @include mobile {
     margin: 3px 0;
@@ -239,9 +240,9 @@ nav {
 //
 
 .posts > .post {
-  padding:.5em;
+  padding:1em;
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $cordal;
 }
 
 .posts > .post:last-child {
@@ -254,7 +255,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $darkerGray;
     font-size: 22px;
     font-style: italic;
   }
@@ -273,7 +274,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $eggshell;
 }
 
 footer {
