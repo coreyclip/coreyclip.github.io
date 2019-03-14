@@ -1,5 +1,9 @@
-
-# Quant Yourself part 3: Putting order to the data in Jupyter Notebooks
+---
+layout: post
+title: Quant Yourself Part 3 
+permalink: /QuantYourself3/
+published: false
+---
 
 ## Data Exploration and Cleaning in Jupyter Notebooks
 
