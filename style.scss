@@ -13,8 +13,9 @@ html {
 }
 
 body {
-    background: $gunmetal;
+    background: $eggshell;
     font: 18px/1.4 $helvetica;
+    color:$gunmetal;
 }
 
 .container {
@@ -33,7 +34,7 @@ h4,
 h5,
 h6 {
     font-family: $helveticaNeue;
-    color: $eggshell;
+    color: $ochre;
     font-weight: bold;
 
     line-height: 1.7;
@@ -63,7 +64,6 @@ h3 {
 
 h4 {
     font-size: 18px;
-    color: cornsilk;
 }
 
 p {
@@ -71,13 +71,13 @@ p {
 }
 
 a {
-    color: cornsilk;
+    color: $ochre;
     text-decoration: none;
     cursor: pointer;
 
     &:hover,
     &:active {
-        color: $grain;
+        color: $gunmetal;
     }
 }
 
@@ -128,7 +128,7 @@ img {
 
 .date {
     font-style: italic;
-    color: $eggshell;
+    color: black;
 }
 
 // Specify the color of the selection
@@ -253,7 +253,7 @@ nav {
 .posts > .post {
     padding: 1em;
     padding-bottom: 2em;
-    border-bottom: 1px solid $eggshell;
+    border-bottom: 1px solid $blue;
 }
 
 .posts > .post:last-child {
@@ -278,6 +278,7 @@ nav {
     .read-more {
         text-transform: uppercase;
         font-size: 15px;
+	color:$blue;
     }
 }
 
@@ -285,7 +286,7 @@ nav {
     margin-top: 50px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    background-color: $eggshell;
+    background-color: $gunmetal;
 }
 
 footer {
