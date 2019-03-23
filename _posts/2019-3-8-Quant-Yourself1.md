@@ -27,11 +27,11 @@ If you're brand new to Python, I would highly recommend downloading and installi
 # Beyond Helloworld: Loading a csv file
 Place your csv file in a dedicated folder for example in a folder called *Quant_yourself* on your C: drive or Home directory if you're using mac. If your using Linux then you know what your doing.
 
-```bash
+```
 C:\Quant_yourself\health_data.csv
 ```
 or if your on a unix based system like linux or mac  
-```bash
+```
 /home/Quant_yourself/health_data.csv
 ```
 
