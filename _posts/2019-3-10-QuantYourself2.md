@@ -3,7 +3,11 @@ layout: post
 title: Starter Data Science Project The Quantified Self, part 2
 ---
 
-In my previous post we started with downloading and installing the Anaconda python distribution and loaded our health data csv into a Python interpretter. I know that a lot of that installation work and perhaps figuring out pathing may have been frustrating. But like anything new we do, those intial challenges and frustrations are what build experience.
+In my previous post we started with downloading and installing the Anaconda
+python distribution and loaded our health data CVS into a Python interpreter. I
+know that a lot of that installation work and perhaps figuring out pathing may
+have been frustrating. But like anything new we do, those initial challenges and
+frustrations are what build experience. 
 
 Now that we have our data loaded it's time to start extracting insights.
 
@@ -110,12 +114,14 @@ There are two ways of doing this that I'll show you for now. The first method in
 Pandas dataframes have a method called **.loc** that allows us to pick out what we want from our dataframe in a very straightforward manner.
 
 ```python
+
 df.loc[row_label, column_label]
 ```
 
 What this would look like using our stats table as an example we would do something like this
 
 ```python
+
 descriptive_stats.loc['mean', 'Dietary Calories (cal)']
 # output: 38089.76926462494
 ```
@@ -123,12 +129,14 @@ descriptive_stats.loc['mean', 'Dietary Calories (cal)']
 to get more that one column you would just have to supply the column_label parameter with a list of labels
 
 ```python
+
 descriptive_stats.loc['mean', ['Dietary Calories (cal)', 'Steps (count)']]
 ```
 
 The first parameter governs which rows pandas selects, while the second governs the columns returned. Note that just using
 
 ```python
+
 df.loc[row_selector]
 ```
 
@@ -136,6 +144,7 @@ will simply grab a subset of rows and all the columns, but if you wanted to grab
 you would need to do something like this:
 
 ```python
+
 df.loc[:, 'Dietary Calories (cal)']
 ```
 
@@ -145,18 +154,21 @@ Using the : between two labels tells pandas to return everything between two lab
 dietary calories, distance, and steps columns and just the row labeled 'mean' we could do something like this:
 
 ```python
+
 df.loc['mean', 'Dietary Calories':'Steps (count)']
 ```
 
 One other use of the : wildcard is to bound it on one end and leave the other open
 
 ```python
+
 df.loc[:, 'Active Calories (kcal)':]
 ```
 
 This would select every column after the active calories column while
 
 ```python
+
 df.loc[:, :'Active Calories (kcal)']
 ```
 
@@ -192,6 +204,7 @@ print(cleaned_corr_table)
 With this addition we should get something like this as our output:
 
 ```bash
+
 Correlation Table
                         Active Calories (kcal)  Dietary Calories (cal)  Distance (mi)  Steps (count)  Weight (lb)
 Active Calories (kcal)                     NaN                     NaN            NaN            NaN          NaN
@@ -213,11 +226,12 @@ Finally lets go over how to export our correlation and stats tables to a csv fil
 With pandas this is about as straightforward as reading in our initial dataset. Every pandas dataframe contains a host of
 methods for exporting to different file formats: json, html, txt, excel, csv are some of the most handy but there are many more.
 
-For right now we'll just export to a csv file. Comma Seperated Values (CSV) can be easily read by excel and other programming languages so by default I typically export data in this format.
+For right now we'll just export to a csv file. Comma Seperated Values (CVS) can be easily read by excel and other programming languages so by default I typically export data in this format.
 
 At the very end of your python script add these lines:
 
 ```python
+
 descriptive_stats.to_csv('descriptive stats.csv')
 cleaned_corr_table.to_csv('Correlation table.csv')
 ```

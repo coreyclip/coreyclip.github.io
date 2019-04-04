@@ -6,7 +6,7 @@ title: Starter Data Science Project The Quantified Self
 ## Getting started with Python
 
 For this series I'm going to approach introducing the tools and techniques of Data Science, in a manner I've so far not seen online yet.
-Most introductions to Data Science revolve around datasets that are already well known and with the foreknowledge of what can and cannot be extracted from it. A certain 20th century tragedy and various flower specimens come to mind. While there's not exactly wrong with learning data science through these kinds of examples, I think it removes the element of data science I personally love the most: discovery!
+Most introductions to Data Science revolve around datasets that are already well known and with the foreknowledge of what can and cannot be extracted from it. A certain 20Th century tragedy and various flower specimens come to mind. While there's not exactly wrong with learning data science through these kinds of examples, I think it removes the element of data science I personally love the most: discovery!
 
 I personally first learned Python in order to explore complex sets of data I encountered during my Peace Corps tour back in 2014. Being able to transform what I was learning through blogs, online courses, and books into actionable insights. Helped create a virtuous cycle of seeing a technique and immediately applying it to a personal project that grew in scope on a almost daily basis.
 
@@ -15,7 +15,7 @@ It's my aim to try to give some guidance on how to recreate that same experience
 - definitely unique
 - relevant and actionable
 
-We'll be using health data collected from our own iphones or wearables as a guide towards learning python for data analysis all the while
+We'll be using health data collected from our own iPhones or wearables as a guide towards learning python for data analysis all the while
 steadily building up our own understanding of ourselves and our habits. Hopefully you'll end up with a enough python knowledge to be dangerous, and have an experience that will serve as a framework when working with data in the future.
 
 ## Gathering our data
