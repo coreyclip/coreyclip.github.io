@@ -1,10 +1,9 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #4183c4;
 
 // Grays
 $black: #000;
@@ -20,16 +19,25 @@ $eggshell: rgba(235, 235, 211, 1);
 $grain: rgba(244, 211, 94, 1);
 $ochre: rgba(239, 131, 84, 1);
 $cordal: rgba(79, 93, 117, 1);
+$navy: #22333b;
+$light: #eae0d5;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$arial: Arial, san-serif; 
+$helvetica: Helvetica,
+Arial,
+sans-serif;
+$helveticaNeue: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+$georgia: Georgia,
+serif;
+$arial: Arial,
+san-serif;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
+    @media screen and (max-width: 640px) {
+        @content;
+    }
 }

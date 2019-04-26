@@ -3,7 +3,7 @@ layout: post
 title: Starter Data Science Project The Quantified Self, part 3
 ---
 
-# Quant Yourself part 3: Data Exploration and Cleaning in Jupyter Notebooks
+## Data Exploration and Cleaning in Jupyter Notebooks
 
 Jupyter notebooks were originally conceived of as a portable means of combining code and written research, and in my opinion an excellent environment for exploring data and toying around with different data engineering operations. 
 
@@ -36,7 +36,8 @@ jupyter lab
 Your web browser should pop up and if this is your first time running jupyter you'll be asked to add in an authentication key. Back in your terminal you should see a bit of text saying ```Authentication key=``` and a bunch of random text. That's your key, now copy and paste that into the window that just popped up in your browser using the mouse not a keyboard shortcut like ctrl+C[^1].  
 
 Once that's done you should see a window like the one bellow:
-![jupyter launched](jupyterLaunch.png "If you see this you're in the right place")
+
+[<img src="{{ site.baseurl/images/jupyterLaunch.png }}" alt="jupyter launch page" style="width: 250px;"/>] 
 
 From here launch a python notebook, which you can do by clicking on the Python 3 emblem right bellow the orange symbol that is conveniently labeled 'notebooks[^2]'. 
 
@@ -630,8 +631,8 @@ weight = df_drop_zeros['Weight (lb)'].dropna()
 
 sns.distplot(weight)
 ```
-![png](output_12_2.png)
 
+[<img src="{{ site.baseurl/images/output_12_2.png }}" alt="violinplot" style="width: 250px;"/>] 
 
 # Chart options 
 
@@ -648,7 +649,7 @@ There are a ton of websites out there that will generate hexl or rgb values for 
 sns.kdeplot(weight, shade=True, color='black')
 ```
 
-![png](output_14_2.png)
+[<img src="{{ site.baseurl/images/output_14_2.png }}" alt="violinplot" style="width: 250px;"/>] 
 
 
 
@@ -661,7 +662,7 @@ pretty_bodyfat = bodyfat.apply(lambda x: float(x) * 100)
 sns.distplot(pretty_bodyfat, color='#a47963') # setting color with a hexl value
 ```
 
-![png](output_15_2.png)
+[<img src="{{ site.baseurl/images/output_15_2.png }}" alt="violinplot" style="width: 250px;"/>] 
 
 
 
@@ -672,7 +673,7 @@ steps = df_drop_zeros['Steps (count)'].dropna()
 sns.distplot(steps)
 ```
 
-![png](output_16_2.png)
+[<img src="{{ site.baseurl/images/output_16_2.png }}" alt="violinplot" style="width: 250px;"/>] 
 
 
 # Time Series graphs
@@ -1201,12 +1202,8 @@ plt.xticks(rotation=45)
 ax = sns.lineplot(y=monthly_steps['Distance (mi)'], x=pretty_dates)
 ```
 
-    /home/coreyclip/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
+[<img src="{{ site.baseurl/images/output_27_1.png }}" alt="violinplot" style="width: 250px;"/>] 
 
-
-
-![png](output_27_1.png)
 
 
 ## Scatter Plots
@@ -1222,15 +1219,8 @@ markers = {1: "o", 0: "X"}
 sns.scatterplot('Distance (mi)', 'Steps (count)', hue='Weekend', style='Weekend', markers=markers, data=df)
 ```
 
+[<img src="{{ site.baseurl/images/output_29_1.png }}" alt="violinplot" style="width: 250px;"/>] 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f72c4867ba8>
-
-
-
-
-![png](output_29_1.png)
 
 
 Here's plot to try and tease out the relationship between step counts on the weekends and weekdays, note that in the above graph I set x and y positionally within the function, while in this graph I set them explicitely. You can get the order of arguments and other helpful information for a function in python by running the command `help(function)` or `function??` in this case `help(sns.scatterplot)` or `sns.scatterplot??`. I frequently use these commands to refresh my understanding of a particular function, plus it usually matches the documentation online and is faster than using google. Also note bellow that I rename our data values in the weekend column and then set the y labels to '' to remove the Weekend title. Using similar matplotlib syntax I also make the x axis title a bit bigger. 
@@ -1246,8 +1236,7 @@ plt.xlabel('Step Count', fontdict={'fontsize':14}, labelpad=.5)
 ```
 
 
-
-![png](output_31_2.png)
+[<img src="{{ site.baseurl/images/output_31_2.png }}" alt="violinplot" style="width: 250px;"/>] 
 
 
 ### Wrapping it up

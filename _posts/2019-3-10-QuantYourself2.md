@@ -3,6 +3,7 @@ layout: post
 title: Starter Data Science Project The Quantified Self, part 2
 ---
 
+## Performing Descriptive Stats with Python
 In my previous post we started with downloading and installing the Anaconda
 python distribution and loaded our health data CVS into a Python interpreter. I
 know that a lot of that installation work and perhaps figuring out pathing may
@@ -31,7 +32,6 @@ print(df.head(5))
 In this script the methods **.info()** and **.head()** just gave us some very bare bones but necessary information about our dataset. Next we'll go over some more sophisticated
 things we can do with our dataset such as descriptive statistics and correlation tables. We'll also go over how to export these statistics to an excel file.
 
-## Descriptive Stats
 
 Pandas has a number of built in method[^1]s that make drawing up stats extremely easy. In this first part of this tutorial series we read out information about our dataset that I would almost always check upon loading a new dataset. From both .info() and .head() I'd be checking to make sure that each column has the expected number of non-null rows and that python had interpretted numbers as numbers and words as strings. That's what the `print(df.info())` line is for. And for good measure I always like to actually read out a sub-section of the dataset so I can see what python is actually seeing, and that's the purpose of this line: `print(df.head(5))`. These steps are there just to make sure our data exists as we expect it to exist, but don't necessarily help us extract insights from our data.
 
