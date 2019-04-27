@@ -16,6 +16,11 @@ body {
     color: $gunmetal;
 }
 
+nav a {
+    margin-right: auto;
+    float: right;
+}
+
 .container {
     margin: 0 auto;
     max-width: 940px;
