@@ -33,17 +33,17 @@
                 </div>
 
                 <nav>
-                    <button type="button" class="btn btn-info btn-rounded btn-lg"><a href="{{ site.baseurl }}/"><i class="fas fa-air-freshener fa-3x white-text pr-3" aria-hidden="true"></i> Blog</a></button>
-                    <button type="button" class="btn btn-success btn-rounded btn-lg"><a href="{{ site.baseurl }}/about"><i class="fas fa-bolt fa-3x amber-text pr-3" aria-hidden="true"></i>About</a></button>
+                    <a href="{{ site.baseurl }}/"><i class="fas fa-air-freshener fa-3x white-text pr-3" aria-hidden="true"></i> Blog</a>
+                    <a href="{{ site.baseurl }}/about"><i class="fas fa-bolt fa-3x amber-text pr-3" aria-hidden="true"></i>About</a>
                 </nav>
             </header>
         </div>
     </div>
     <hr>
-    <div id="main" role="main" class="card">
-        <div class="card-body">
-            {{ content }}
-        </div>
+    <div id="main" role="main">
+
+        {{ content }}
+
     </div>
 
     <div class="wrapper-footer">
