@@ -42,8 +42,7 @@ Once that's done you should see a window like the one bellow:
 From here launch a python notebook, which you can do by clicking on the Python 3 emblem right bellow the orange symbol that is conveniently labeled 'notebooks[^2]'. 
 
 This should bring you to an image like the one bellow: 
-![blank jupyter notebook](BlankNotebook.png "A Brand New Jupyter notebook")
-
+[<img src="{{ site.baseurl/images/BlankNotebook.png }}" alt="A Brand New Jupyter notebook" style="width: 250px;"/>] 
 The first text area in the notebook is by default a code block and I would suggest trying to write some code in there right now just to get a feel for what jupyter and it's underlying iPython notebook is all about. 
 Each text area or *cell* in jupyter's nomenclature is kind of like a miniature script yet the variables, functions, and objects are shared between the different cells.
 

@@ -14,7 +14,7 @@ body {
     background: $light;
     font: 18px/1.4 $helvetica;
     color: $gunmetal;
-    background: $light;
+    background: $eggshell;
 }
 
 nav a {
@@ -165,7 +165,9 @@ img {
 //
 
 .wrapper-masthead {
-    margin-bottom: 50px;
+    margin-bottom: 10%;
+    background-color:$grain;
+
 }
 
 .masthead {
@@ -179,8 +181,7 @@ img {
 
 .site-avatar {
     float: right;
-    width: 300px;
-    height: 300px;
+    height: auto;
     margin-right: 15px;
 
     @include mobile {
@@ -193,6 +194,8 @@ img {
         color: $gunmetal;
         border-radius: 26% !important;
         border-style: dashed;
+        width: 70%;
+        height:auto;
     }
 }
 
