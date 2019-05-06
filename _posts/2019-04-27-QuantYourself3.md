@@ -37,6 +37,7 @@ Your web browser should pop up and if this is your first time running jupyter yo
 
 Once that's done you should see a window like the one bellow:
 
+![jupyter launch page](/images/jupyterLaunch.png)
 [<img src="{{ site.baseurl/images/jupyterLaunch.png }}" alt="jupyter launch page" style="width: 250px;"/>] 
 
 From here launch a python notebook, which you can do by clicking on the Python 3 emblem right bellow the orange symbol that is conveniently labeled 'notebooks[^2]'. 
@@ -1234,7 +1235,7 @@ plt.ylabel('')
 plt.xlabel('Step Count', fontdict={'fontsize':14}, labelpad=.5)
 ```
 
-
+![violinplot](/images/output_31_2.png)
 [<img src="{{ site.baseurl/images/output_31_2.png }}" alt="violinplot" style="width: 250px;"/>] 
 
 
