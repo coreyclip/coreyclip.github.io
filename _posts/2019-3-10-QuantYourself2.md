@@ -10,6 +10,8 @@ know that a lot of that installation work and perhaps figuring out pathing may
 have been frustrating. But like anything new we do, those initial challenges and
 frustrations are what build experience. 
 
+you can download the code samples for this tutorial series from [this github repo](https://github.com/coreyclip/Quant_yourself)
+
 Now that we have our data loaded it's time to start extracting insights.
 
 Open up the script from the previous part in your prefered text editor.
