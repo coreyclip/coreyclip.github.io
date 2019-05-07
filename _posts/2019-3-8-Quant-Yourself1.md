@@ -18,7 +18,7 @@ It's my aim to try to give some guidance on how to recreate that same experience
 We'll be using health data collected from our own iPhones or wearables as a guide towards learning python for data analysis all the while
 steadily building up our own understanding of ourselves and our habits. Hopefully you'll end up with a enough python knowledge to be dangerous, and have an experience that will serve as a framework when working with data in the future.
 
-you can download the code samples for this tutorial series from [this github repo](https://github.com/coreyclip/Quant_yourself)
+you can download the code samples [this github repo](https://github.com/coreyclip/Quant_yourself)
 
 ## Gathering our data
 
