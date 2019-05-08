@@ -1,7 +1,8 @@
 ---
 layout: post
-title: The Quantified Self part 3: Data and Visualization with Jupyter
+title: The Quantified Self part 3
 ---
+## Data and Visualization with Jupyter
 
 Jupyter notebooks were originally conceived of as a portable means of combining code and written research, and in my opinion an excellent environment for exploring data and toying around with different data engineering operations. 
 
