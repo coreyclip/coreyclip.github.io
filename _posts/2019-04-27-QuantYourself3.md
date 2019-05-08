@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starter Data Science Project The Quantified Self, part 3
+title: Starter Data Science Project The Quantified Self, part 3: Data Cleaning and Visualization with Jupyter
 ---
 
 Jupyter notebooks were originally conceived of as a portable means of combining code and written research, and in my opinion an excellent environment for exploring data and toying around with different data engineering operations. 
