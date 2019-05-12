@@ -1,4 +1,6 @@
---- --- @import "reset";
+--- 
+--- 
+@import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
@@ -166,7 +168,7 @@ img {
 
 .wrapper-masthead {
     margin-bottom: 10%;
-    background-color:$grain;
+    background-color: $grain;
 
 }
 
@@ -179,6 +181,12 @@ img {
     }
 }
 
+.site-avatar-col {
+    @include mobile {
+        display: none;
+    }
+}
+
 .site-avatar {
     float: right;
     height: auto;
@@ -186,7 +194,7 @@ img {
 
     @include mobile {
         float: none;
-        display: block;
+        display: none;
         margin: 0 auto;
     }
 
@@ -195,7 +203,7 @@ img {
         border-radius: 26% !important;
         border-style: dashed;
         width: 70%;
-        height:auto;
+        height: auto;
     }
 }
 
@@ -254,6 +262,19 @@ nav {
     }
 }
 
+.desktop-menu {
+    @include mobile {
+        display: none;
+    }
+}
+
+.mobilr-menu {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+
 //
 // .main
 //
@@ -308,3 +329,7 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+// mobile styling
+
