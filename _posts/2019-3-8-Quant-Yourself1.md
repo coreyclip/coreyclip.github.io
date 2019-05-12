@@ -18,6 +18,8 @@ It's my aim to try to give some guidance on how to recreate that same experience
 We'll be using health data collected from our own iPhones or wearables as a guide towards learning python for data analysis all the while
 steadily building up our own understanding of ourselves and our habits. Hopefully you'll end up with a enough python knowledge to be dangerous, and have an experience that will serve as a framework when working with data in the future.
 
+you can download the code samples [this github repo](https://github.com/coreyclip/Quant_yourself)
+
 ## Gathering our data
 
 [QS Access](https://itunes.apple.com/us/app/qs-access/id920297614?mt=8) is a simple iphone app that accesses the health app in your iphone. You'll want to allow the health app to have read access to all of the other apps on your phone tracking your calories, exercise, meditation minutes, etc. because QS Access only works with the health app directly. If you currently aren't using your phone to track your personal health, your phone likely already has some information QS Access can pull, namely your sleep hours and distance walked/step data. I for example mostly just have my step data and sleep data, I have some records of calories from way back, and otherwise just have the past couple of months of me weighing myself semi-regularly. I would recommend first downloading your data as days since that will include the most metrics coming from your devices. From there you can upload this csv file to your own personal computer either via dropbox, icloud, google drive or by email. Now that our data has been captured, we can transform it into something comprehensible.

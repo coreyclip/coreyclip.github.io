@@ -3,8 +3,7 @@ layout: post
 title: Starter Data Science Project The Quantified Self, part 3
 ---
 
-## Data Exploration and Cleaning in Jupyter Notebooks
-
+## Data and Visualization with Jupyter
 Jupyter notebooks were originally conceived of as a portable means of combining code and written research, and in my opinion an excellent environment for exploring data and toying around with different data engineering operations. 
 
 Jupyter notebooks are made up of text blocks in either code or markdown. Markdown is a quick and efficient way of writing text and formatting all in one go. I already showed you how to write comments in code, but with markdown you can write detailed explanations of what your code blocks are doing or give commentary on what's being outputted by adjacent code cells. 
@@ -12,6 +11,8 @@ Jupyter notebooks are made up of text blocks in either code or markdown. Markdow
 Jupyter also nicely outputs tables and graphs that your code produces and allows you to run your code in a step by step manner. Meaning that you could load a datasource in one cell and then write any number of cells that perform different operations on it allowing you to then evaluate which direction your eventual analysis or program will go. 
 
 In this next part we'll go over the basics of running jupyter notebooks by doing some basic data processing. 
+
+you can download the code samples for this tutorial series from [this github repo](https://github.com/coreyclip/Quant_yourself)
 
 ## Overview
 * Firing up Jupyter Lab
@@ -38,12 +39,12 @@ Your web browser should pop up and if this is your first time running jupyter yo
 Once that's done you should see a window like the one bellow:
 
 ![jupyter launch page](/images/jupyterLaunch.png)
-[<img src="{{ site.baseurl/images/jupyterLaunch.png }}" alt="jupyter launch page" style="width: 250px;"/>] 
 
 From here launch a python notebook, which you can do by clicking on the Python 3 emblem right bellow the orange symbol that is conveniently labeled 'notebooks[^2]'. 
 
 This should bring you to an image like the one bellow: 
-[<img src="{{ site.baseurl/images/BlankNotebook.png }}" alt="A Brand New Jupyter notebook" style="width: 250px;"/>] 
+![new jupyter notebook](/images/BlankNotebook.png)
+
 The first text area in the notebook is by default a code block and I would suggest trying to write some code in there right now just to get a feel for what jupyter and it's underlying iPython notebook is all about. 
 Each text area or *cell* in jupyter's nomenclature is kind of like a miniature script yet the variables, functions, and objects are shared between the different cells.
 
@@ -631,8 +632,7 @@ weight = df_drop_zeros['Weight (lb)'].dropna()
 
 sns.distplot(weight)
 ```
-
-[<img src="{{ site.baseurl/images/output_12_2.png }}" alt="violinplot" style="width: 250px;"/>] 
+![weight distplot](/images/output_12_2.png)
 
 # Chart options 
 
@@ -648,8 +648,7 @@ There are a ton of websites out there that will generate hexl or rgb values for 
 # same plot with just the lines (kde) with shading enabled and a different color
 sns.kdeplot(weight, shade=True, color='black')
 ```
-
-[<img src="{{ site.baseurl/images/output_14_2.png }}" alt="violinplot" style="width: 250px;"/>] 
+![shaded kdeplot](/images/output_14_2.png)
 
 
 
@@ -661,8 +660,7 @@ pretty_bodyfat = bodyfat.apply(lambda x: float(x) * 100)
 
 sns.distplot(pretty_bodyfat, color='#a47963') # setting color with a hexl value
 ```
-
-[<img src="{{ site.baseurl/images/output_15_2.png }}" alt="violinplot" style="width: 250px;"/>] 
+![colored distplot](/images/output_15_2.png)
 
 
 
@@ -672,8 +670,7 @@ sns.set_style("darkgrid")
 steps = df_drop_zeros['Steps (count)'].dropna()
 sns.distplot(steps)
 ```
-
-[<img src="{{ site.baseurl/images/output_16_2.png }}" alt="violinplot" style="width: 250px;"/>] 
+![styled distplot](/images/output_16_2.png)
 
 
 # Time Series graphs
@@ -1201,9 +1198,7 @@ plt.rcParams['figure.figsize'] = (26,12)
 plt.xticks(rotation=45)
 ax = sns.lineplot(y=monthly_steps['Distance (mi)'], x=pretty_dates)
 ```
-
-[<img src="{{ site.baseurl/images/output_27_1.png }}" alt="violinplot" style="width: 250px;"/>] 
-
+![line plot with sizing ](/images/output_27_1.png)
 
 
 ## Scatter Plots
@@ -1218,8 +1213,7 @@ markers = {1: "o", 0: "X"}
 
 sns.scatterplot('Distance (mi)', 'Steps (count)', hue='Weekend', style='Weekend', markers=markers, data=df)
 ```
-
-[<img src="{{ site.baseurl/images/output_29_1.png }}" alt="violinplot" style="width: 250px;"/>] 
+![scatter plot with markers](/images/output_29_1.png)
 
 
 
@@ -1235,8 +1229,7 @@ plt.ylabel('')
 plt.xlabel('Step Count', fontdict={'fontsize':14}, labelpad=.5)
 ```
 
-![violinplot](/images/output_31_2.png)
-[<img src="{{ site.baseurl/images/output_31_2.png }}" alt="violinplot" style="width: 250px;"/>] 
+![violinplot with step count](/images/output_31_2.png)
 
 
 ### Wrapping it up
