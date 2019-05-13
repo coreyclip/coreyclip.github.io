@@ -273,7 +273,7 @@ nav {
     }
 }
 
-.mobilr-menu {
+.mobile-menu {
     display: none;
     @include mobile {
         display: block;
@@ -336,6 +336,4 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
-
-// mobile styling
 
