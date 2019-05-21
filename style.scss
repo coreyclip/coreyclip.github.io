@@ -24,7 +24,7 @@ body {
     background: $eggshell;
 }
 
-nav a {
+nav a .desktop-menu{
     margin-right: auto;
     float: right;
 }
@@ -292,7 +292,7 @@ nav {
 
 .posts > .post:last-child {
     padding-bottom: 1em;
-    border-bottom: none;
+    border-bottom: 1px solid $lightGray;
 }
 
 

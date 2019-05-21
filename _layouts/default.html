@@ -1,104 +1,104 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <head>
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+        {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-</head>
+        <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    </head>
 
-<body>
-    <div class="wrapper-masthead">
-        <div class="container">
-            <header class="masthead clearfix">
-                <div class='row'>
-                    <div class='col-8'>
-                        <div class='row' style="margin-top:25%;">
-                            <div class="site-info">
-                                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                                <p class="site-description">{{ site.description }}</p>
-                            </div>
+    <body>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <div class='row'>
+                        <div class='col-md-4 col-sm-10 site-avatar-col'>
+                            <a href="{{ site.baseurl }}/" class="site-avatar mt-5"><img class='rounded-circle' src="{{ site.avatar }}" /></a>
                         </div>
-                        <div class='row'>
-                            <nav class="desktop-menu">
-                                <a href="{{ site.baseurl }}/"><i class="fas fa-air-freshener fa-2x blue-text pr-2 pl-5" aria-hidden="true"></i>Blog</a>
-                                <a href="{{ site.baseurl }}/about"><i class="fas fa-bolt fa-2x amber-text pr-2 pl-5" aria-hidden="true"></i>About</a>
-                                <a href="{{ site.baseurl }}/resources"><i class="fas fa-bookmark fa-2x green-text pr-2 pl-5" aria-hidden="true"></i>Resources</a>
-                            </nav>
+                        <div class='col-md-8 col-sm-10'>
+                            <div class='row' style="margin-top:25%;">
+                                <div class="site-info">
+                                    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                                    <p class="site-description">{{ site.description }}</p>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class="col-12"
+                                    <nav class="desktop-menu">
+                                        <a href="{{ site.baseurl }}/"><i class="fas fa-air-freshener fa-2x blue-text pr-2 pl-5" aria-hidden="true"></i>Blog</a>
+                                        <a href="{{ site.baseurl }}/about"><i class="fas fa-bolt fa-2x amber-text pr-2 pl-5" aria-hidden="true"></i>About</a>
+                                        <a href="{{ site.baseurl }}/resources"><i class="fas fa-bookmark fa-2x green-text pr-2 pl-5" aria-hidden="true"></i>Resources</a>
+                                    </nav>
+                                    <nav class="mobile-menu navbar navbar-light navbar-1 white">
 
-                            <!-- <nav class="mobile-menu navbar navbar-light navbar-1 white"> -->
+                                        <!-- Navbar brand-->
+                                        <a class="navbar-brand" href="#">Menu</a>
+                                        <!-- Collapse button -->
+                                        <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                                        aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+                                        <!-- Menu -->
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
 
-                              <!-- Navbar brand -->
-                                <!-- <a class="navbar-brand" href="#">Menu</a> -->
+                                        <!-- Collapsible content -->
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
 
-                              <!-- Collapse button -->
-                            <!-- <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" -->
-                            <!-- aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"> -->
-                            <!-- Menu -->
-                            <!--<span class="navbar-toggler-icon"></span>-->
-                            <!-- </button> -->
-
-                              <!-- Collapsible content -->
-                            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent15"> -->
-
-                                <!-- Links -->
-                            <!-- <ul class="navbar-nav mr-auto"> -->
-                            <!-- <li class="nav-item active"> -->
-                            <!-- <a class="nav-link" href="{{ site.baseurl }}/">Blog <span class="sr-only">(current)</span></a> -->
-                            <!-- </li> -->
-                            <!-- <li class="nav-item"> -->
-                            <!-- <a class="nav-link" href="{{ site.baseurl }}/about">About</a> -->
-                            <!-- </li> -->
-                            <!-- <li class="nav-item"> -->
-                            <!-- <a class="nav-link" href="{{ site.baseurl }}/resources">Resources</a> -->
-                            <!-- </li> -->
-                            <!-- </ul> -->
+                                        <!-- Links -->
+                                        <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                        <a class="nav-link" href="{{ site.baseurl }}/">Blog <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" href="{{ site.baseurl }}/resources">Resources</a>
+                                        </li>
+                                    </ul>
 
                               </div>
-                              <!-- Collapsible content -->
+                                        <!-- Collapsible content -->
 
-                            </nav>
-                            <!--/.Navbar-->
+                                    </nav>
+                                    <!--/.Navbar-->
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-                    <div class='col-4 site-avatar-col'>
-                        <a href="{{ site.baseurl }}/" class="site-avatar mt-5"><img class='rounded-circle' src="{{ site.avatar }}" /></a>
-                        </div>
-
-                </div>
-            </header>
+                </header>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div id="main" role="main" class='container'>
+        <hr>
+        <div id="main" role="main" class='container'>
 
-        {{ content }}
+            {{ content }}
 
-    </div>
-
-    <div class="wrapper-footer">
-        <div class="container">
-            <footer class="footer">
-                {% include svg-icons.html %}
-            </footer>
         </div>
-    </div>
 
-    {% include analytics.html %}
-</body>
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    {% include svg-icons.html %}
+                </footer>
+            </div>
+        </div>
+
+        {% include analytics.html %}
+    </body>
 
 </html>
