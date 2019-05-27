@@ -8,9 +8,11 @@ published: false
 
 In this final part of this tutorial series, we'll go over how to make a basic yet functional front end for what we've created so far in this tutorial series.
 Typically when we refer to the *front-end* of our application we are referring to how a user interacts with the program we've written. A front end can take the form 
-of a *graphical user interface* (GUI) which runs on a user's own machine, or more commonly these days on a mobile platform (iPhone, android) or on a web site as a web 
+of a *graphical user interface* (GUI) which runs on a user's own machine, or more commonly these days on a mobile platform (iPhone, android** or on a web site as a web 
 application. For data science projects the web app is usually the optimal way to distribute your work out to the wider world. If you're looking to bee line to that step I'd suggest looking into Flask for the web development aspect
 and heroku for deployment. 
+
+**Note this tutorial is only for windows, I haven't tested any of it on OS X and excel isn't supported on Linux as far as I know***
 
 But particularly in business situations, excel is probably the most common way people interact with data and it's an uphill and not particularly necessary battle to get them to part from it. Excel is limited by the number of records it can reasonably process and by the functionalities programmed into it. What Excel has going for it, and what it excels at is user manipulation of data and representation. With the python library **xlwings** you can connect Python's libraries and speed with Excel's ready made user interface. 
 
@@ -85,4 +87,58 @@ wb.sheets[0].range("A1").value = "Hello xlwings!"
 
 The code above tells xlwings to select the first sheet in the workbook through an integer system, with the `.sheets` method. If you'd rather use the sheet name as it appears in the bottom tabs of your excel file you can supply those too as a string. After that the `.range('A1')` method call specifies an excel range using the same conventions that you'd use in excel. Finally to assign a value to an excel range you have to declare the `.value` attribute of our `range`, and this value is "Hello xlwings!". 
 
-## Importing our
+## Importing our dataset
+The normal methodology of using pd.read_csv would work just fine in this situation but I wanted to also include a bit of VBA that will allow users to open up a file with the standard GUI and have that be passed to our xlwings function. 
+
+Go back to your macro in excel and add the following code
+TODO verify VBA code
+```vba
+
+Sub hello_xlwings()
+    'FILE-SIDE PREPARATION
+    'Returns file path string or boolean false
+    vFile = Application.GetOpenFilename(FileFilter:="Excel Workbooks (*.XLSX), *.XLSX", Title:="Select File To Be Opened")
+    
+    'Error handling; easier to handle out of getWorkbook
+    If vFile = False Then
+        MsgBox ("Analysis Cancelled.")
+        Exit Sub
+    Else
+        'replace / with // to avoid unicode decoding errors
+        File = "'" & Replace(CStr(vFile), "\", "//") & "'"
+        
+    End If
+    
+    mymodule = Left(ThisWorkbook.name, (InStrRev(ThisWorkbook.name, ".", -1, vbTextCompare) - 1))
+    
+    RunPython ("import " & mymodule & "; " & mymodule & ".main(" & File & ")")
+
+End Sub
+```
+
+This will prompt excel to allow the user to open up the file explorer and select a file. Its path is then cleaned to fit windows pathing conditions and then finally passed into our python module as a function parameter using vba's string concatenation methods. I wanted to include this additional step, because I found it to be extremely handy when it came to passing xlwings projects off to non technical users. You as a programmer will have to become extremely familiar with file paths but these are often very frustrating to write out for many and the only alternative would be to restrict users to keeping their input data in one file location.
+
+Next open up your python file and create a new function called `main` with the following code.
+
+```python
+def main(file):
+    wb = xw.Book.caller()
+    front_page = wb.sheets[0]
+    df = pd.read_csv(file, parse_dates=['Start'])
+    df = df.replace(np.int(0), np.nan)
+```
+
+## Basic Output
+The above will initialize xlwings connection to the workbook, pass the first excel sheet to a variable called `front_page`, read our csv file into pandas, and replace the zeros with Nan values. With that we should be able to do our first test run. To make things more interesting add some code to process the pandas dataframe and send it to the front page. Bellow is only a suggestion, basically any pandas dataframe object should work with this formula. 
+
+```python
+front_page.range('A8').value = "Statistics"
+front_page.range('A10').value = df.describe().T
+
+front_page.range('A22').value = 'Correlation Table'
+front_page.range('A23').value = df.corr()
+```
+
+When you click on the button we set up earlier you should be asked to open up a file, open up your health data csv and if everything is set up properly you should see the descriptive stats and correlation table outputted to your excel sheet. Note that xlwings is smart enough to expand the output range to properly contain the dimensions of a pandas dataframe or restrict the range when passed just a single cell's worth of information.
+
+## User options
