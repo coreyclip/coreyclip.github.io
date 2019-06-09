@@ -1,11 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
     <head>
         <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
         {% include meta.html %}
-
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -17,10 +14,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
         <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
         <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     </head>
-
     <body>
         <div class="wrapper-masthead">
             <div class="container">
@@ -37,40 +32,30 @@
                                 </div>
                             </div>
                             <div class='row'>
-                                <div class="col-12"
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-2">
-                                            <a href="/">Blog</a>
-                                        </div>
-                                        <div class="col-md-4 col-sm-2">
-                                            <a href="/about">About</a>
-                                        </div><div class="col-md-4 col-sm-2">
-                                            <a href="/resources">Resources</a>
-                                        </div>
+                                <div class="col-3 col-md-4 col-sm-2">
+                                    <a href="/">Blog</a>
+                                </div>
+                                <div class="col-3 col-md-4 col-sm-2">
+                                    <a href="/about">About</a>
+                                </div><div class="col-3 col-md-4 col-sm-2">
+                                    <a href="/resources">Resources</a>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
                 </header>
+                    </div>
             </div>
-        </div>
-        <hr>
-        <div id="main" role="main" class='container'>
-
-            {{ content }}
-
-        </div>
-
-        <div class="wrapper-footer">
-            <div class="container">
-                <footer class="footer">
-                    {% include svg-icons.html %}
-                </footer>
+            <hr>
+            <div id="main" role="main" class='container'>
+                {{ content }}
             </div>
-        </div>
-
-        {% include analytics.html %}
+            <div class="wrapper-footer">
+                <div class="container">
+                    <footer class="footer">
+                        {% include svg-icons.html %}
+                    </footer>
+                </div>
+            </div>
+            {% include analytics.html %}
     </body>
-
 </html>
