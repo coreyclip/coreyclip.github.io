@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starter Data Science Project The Quantified Self, part 4: Using Excel as a front-end
+title: Starter Data Science Project The Quantified Self, part 4
 ---
 
 ## Introducing Xlwings
