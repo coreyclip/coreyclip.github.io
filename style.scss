@@ -24,7 +24,7 @@ html {
 
 body {
     background: $light;
-    font: 18px/1.4 $helvetica;
+    font: 18px/1.4 $cabin;
     color: $gunmetal;
     background: $eggshell;
 }
@@ -223,7 +223,8 @@ img {
 }
 
 .site-info {
-    float: left;
+    float: right;
+    margin-top:25%;
 
     @include mobile {
         float: none;
