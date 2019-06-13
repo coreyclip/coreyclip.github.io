@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+        {% include meta.html %}
+         <meta charset="UTF-8"> 
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel='icon' href='favicon.ico'>
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    </head>
+    <body>
+        <style>
+            .about-header {
+
+                        }
+            .section {
+                border-left-width: 2px;
+                border-left-style:dotted;
+                padding-left:5%;
+            }
+        
+        </style>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <div class='row'>
+                        <div class='col-md-4 col-sm-10 site-avatar-col'>
+                            <a href="{{ site.baseurl }}/" class="site-avatar mt-5"><img class='rounded-circle' src="{{ site.avatar }}" /></a>
+                        </div>
+                        <div class='col-md-8 col-sm-10'>
+                            <div class='row' style="margin-top:25%;">
+                                <div class="site-info">
+                                    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                                    <p class="site-description">{{ site.description }}</p>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class="col-3 col-md-4 col-sm-2">
+                                    <a href="/">Blog</a>
+                                </div>
+                                <div class="col-3 col-md-4 col-sm-2">
+                                    <a href="/about">About</a>
+                                </div><div class="col-3 col-md-4 col-sm-2">
+                                    <a href="/resources">Resources</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                    
+            </div>
+            <hr>
+            <div id="main" role="main" class='container'>
+                <div class='row'>
+                    <div class='col-8'>
+                        <h3 class='about-header mt-5'>About Me</h3>
+                        
+                        <p class='mb-2 section'>
+                        I currently work at a finance company where I design and impliment technical solutions common to many businesses. 
+                        My current tech stack centers primarily around python and javascript at the moment.
+                        I'm passionate about technology designed by and for the many feel free to reach out if you 
+                        have any questions regarding the contents of my blog.
+                        </p>
+                        
+                        <h3 class='about-header mt-5'>Tech Stack</h3>
+                        <div class='section'>
+                            <h4>Python</h4>
+                            <p class='mb-2'>pandas, numpy, BeautifulSoup, Plotly, Seaborn, Matplotlib, <br>
+                               Xlwings, requests, scikit-learn, Keras, Tensorflow, sqlalchemy
+                            </p>
+                            <h4>Javascript</h4>
+                            <p class='mb-2'>JQuery, leaflet.js, D3.js, nightwatch, cheerio, sequelize, bluebird</p>
+
+                            <h4>Web Frameworks and tools</h4>
+                            <p class='mb-2'>Flask, Dash, Laravel, bootstrap</p>
+
+                            <h4>Other</h4>
+                            <p class='mb-2'>Linux, Windows, gitlab, Docker</p>
+                        </div>
+
+                        
+                        <h3 class='about-header mt-5'>Selected Projects</h3>
+                        <ul>
+                            <li><a href='https://donors-choose-grant-rater.herokuapp.com/'>Donors Choose Grant Rater</a> an AI powered application reviewer for the site
+                                <a href='donorschoose.org'>donorschoose.org</a></li>
+                            <li><a href='https://github.com/coreyclip/Earthquake-GeoMapping'>Earthquak-Geomapping</a> a leaflet.js map page visualizing historic earthquake data</li>
+                            <li><a href='https://github.com/coreyclip/MarScrape'>MarScrape</a> <span> a simple demonstration of webscraping and MongoDB</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-footer">
+                <div class="container">
+                    <footer class="footer">
+                        {% include svg-icons.html %}
+                    </footer>
+                </div>
+            </div>
+            {% include analytics.html %}
+    </body>
+</html>

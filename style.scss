@@ -8,6 +8,11 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
+.about-header {
+    border-width:5px;  
+    border-style:dashed;
+}
+
 
 /**************/
 /* BASE RULES */
@@ -22,6 +27,10 @@ body {
     font: 18px/1.4 $helvetica;
     color: $gunmetal;
     background: $eggshell;
+}
+
+.links-row {
+    margin-top: 10%;
 }
 
 nav a .desktop-menu{
@@ -87,6 +96,7 @@ a {
 
     &:hover,
     &:active {
+        font-weight: bold;
         color: $gunmetal;
     }
 }
@@ -172,7 +182,7 @@ img {
 //
 
 .wrapper-masthead {
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     background-color: $grain;
 
 }
