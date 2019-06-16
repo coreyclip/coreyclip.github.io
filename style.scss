@@ -23,7 +23,6 @@ html {
 }
 
 body {
-    background: $light;
     font: 18px/1.4 $cabin;
     color: $gunmetal;
     background: $eggshell;
@@ -31,6 +30,12 @@ body {
 
 .links-row {
     margin-top: 10%;
+}
+
+#top-container{
+    background-color: rgb(79, 93, 117);
+    color:whitesmoke;
+    
 }
 
 nav a .desktop-menu{
@@ -43,7 +48,8 @@ nav a .desktop-menu{
     max-width: 940px;
     padding: 0 20px;
     width: 100%;
-    background: inherit;
+    background: $cordal;
+    color:$light;
 }
 
 h1,
