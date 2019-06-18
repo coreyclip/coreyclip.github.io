@@ -25,7 +25,7 @@ html {
 body {
     font: 18px/1.4 $cabin;
     color: $gunmetal;
-    background: $eggshell;
+    background-color: $eggshell;
 }
 
 .links-row {
@@ -48,8 +48,7 @@ nav a .desktop-menu{
     max-width: 940px;
     padding: 0 20px;
     width: 100%;
-    background: $cordal;
-    color:$light;
+    color:#4f5d75;
 }
 
 h1,
@@ -189,7 +188,6 @@ img {
 
 .wrapper-masthead {
     margin-bottom: 2%;
-    background-color: $grain;
 
 }
 
@@ -221,7 +219,6 @@ img {
 
     img {
         color: $gunmetal;
-        border-radius: 26% !important;
         border-style: dashed;
         width: 70%!important;
         height:auto;
