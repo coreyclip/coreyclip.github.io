@@ -4,11 +4,11 @@ title: Starter Data Science Project The Quantified Self, part 4
 ---
 
 ## Introducing Xlwings
-
 In this final part of this tutorial series, we'll go over how to make a basic yet functional front end for what we've created so far in this tutorial series.
 Typically when we refer to the *front-end* of our application we are referring to how a user interacts with the program we've written. A front end can take the form 
 of a *graphical user interface* (GUI) which runs on a user's own machine, or more commonly these days on a mobile platform (iPhone, android) or on a web site as a web 
-application. For data science projects the web app is usually the optimal way to distribute your work out to the wider world. If you're looking to bee line to that step I'd suggest looking into Flask for the web development aspect
+application. For data science projects the web app is usually the optimal way to distribute your work out to the wider world. 
+So If you're looking to bee line to that step I'd suggest looking into Flask for the web development aspect
 and heroku for deployment. 
 
 But particularly in business situations, excel is probably the most common way people interact with data and it's an uphill and not particularly necessary battle to get them to part from it. Excel is limited by the number of records it can reasonably process and by the functionalities programmed into it. What Excel has going for it, and what it excels at is user manipulation of data and representation. With the python library **xlwings** you can connect Python's libraries and speed with Excel's ready made user interface. 
@@ -85,7 +85,7 @@ wb.sheets[0].range("A1").value = "Hello xlwings!"
 The code above tells xlwings to select the first sheet in the workbook through an integer system, with the `.sheets` method. If you'd rather use the sheet name as it appears in the bottom tabs of your excel file you can supply those too as a string. After that the `.range('A1')` method call specifies an excel range using the same conventions that you'd use in excel. Finally to assign a value to an excel range you have to declare the `.value` attribute of our `range`, and this value is "Hello xlwings!". 
 
 ## Importing our Data Set
-We can import our data in same manner that we've done before using ```pd.read_csv``` in our main script. Open up your python file and create a new function like the following. 
+We can import our data in same manner that we've done before using ```pd.read_csv``` in the same script our hello_xlwings function sits in. Open up your python file and create a new function like the following. 
 
 ```python
 def main():
