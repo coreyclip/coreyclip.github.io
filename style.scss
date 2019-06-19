@@ -8,6 +8,11 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
+.about-header {
+    border-width:5px;  
+    
+}
+
 
 /**************/
 /* BASE RULES */
@@ -18,10 +23,19 @@ html {
 }
 
 body {
-    background: $light;
-    font: 18px/1.4 $helvetica;
+    font: 18px/1.4 $cabin;
     color: $gunmetal;
-    background: $eggshell;
+    background-color: $eggshell;
+}
+
+.links-row {
+    margin-top: 10%;
+}
+
+#top-container{
+    background-color: rgb(79, 93, 117);
+    color:whitesmoke;
+    
 }
 
 nav a .desktop-menu{
@@ -34,7 +48,7 @@ nav a .desktop-menu{
     max-width: 940px;
     padding: 0 20px;
     width: 100%;
-    background: inherit;
+    color:#4f5d75;
 }
 
 h1,
@@ -87,6 +101,7 @@ a {
 
     &:hover,
     &:active {
+        font-weight: bold;
         color: $gunmetal;
     }
 }
@@ -172,14 +187,13 @@ img {
 //
 
 .wrapper-masthead {
-    margin-bottom: 10%;
-    background-color: $grain;
+    margin-bottom: 2%;
 
 }
 
 .masthead {
     padding: 20px 0;
-    border-bottom: 1px solid $lightGray;
+    
 
     @include mobile {
         text-align: center;
@@ -205,7 +219,6 @@ img {
 
     img {
         color: $gunmetal;
-        border-radius: 26% !important;
         border-style: dashed;
         width: 70%!important;
         height:auto;
@@ -213,7 +226,8 @@ img {
 }
 
 .site-info {
-    float: left;
+    float: right;
+    margin-top:25%;
 
     @include mobile {
         float: none;

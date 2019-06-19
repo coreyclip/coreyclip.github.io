@@ -35,6 +35,10 @@ serif;
 $arial: Arial,
 san-serif;
 
+$stylishMono: 'Nova Mono', monospace;
+$monospace: 'Roboto Mono', monospace;
+$cabin: 'Cabin', sans-serif;
+
 // Mobile breakpoints
 @mixin mobile {
     @media screen and (max-width: 640px) {
