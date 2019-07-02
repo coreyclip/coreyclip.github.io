@@ -4,7 +4,6 @@ title: Starter Data Science Project The Quantified Self
 ---
 
 ## Getting started with Python
-
 For this series I'm going to approach introducing the tools and techniques of Data Science, in a manner I've so far not seen online yet.
 Most introductions to Data Science revolve around datasets that are already well known and with the foreknowledge of what can and cannot be extracted from it. A certain 20Th century tragedy and various flower specimens come to mind. While there's not exactly wrong with learning data science through these kinds of examples, I think it removes the element of data science I personally love the most: discovery!
 
@@ -89,7 +88,7 @@ pandas **dataframe** which you can think of as being analgous to a excel spreads
 
 Next add these lines to the script
 
-```Python
+```python
 print("information about your dataset")
 print(df.info())
 print("first 5 rows of the data")
