@@ -4,7 +4,6 @@ title: Processing User Input, with Flask-WTForms
 ---
 
 ## Adding user comments to your website
-
 In this post I'll go over how to expand a basic html serving flask website to a more dynamic website including content that you the web developer has put in and content added by users of the site. While creating comments is the clearest use case for these techniques. The broad strokes apply to most cases when you want information from your front end to communicate with your backend. 
 
 To start out consider this basic flask website structure 
@@ -197,17 +196,19 @@ to give it a route and method for interacting with that route, this is done with
 
 Now we'll start using jinja to work with the elements we passed to our template back in routes.py 
 Jinja is itself it's own language, so while it has some pythonic flair it is it's own distinct tool. To render an object passed via render_template we need to use a pair of curly brackets like this 
-
+{% raw %}
 ```jinja 
-{{ my_variable }}
+ {{ my_variable  }}
 ```
 
+{% endraw %}
 This translates to the following in order to use our WTForms object we created back in forms.py 
 
+{% raw %}
 ```jinja
 <h1>Make a Comment about Waffles</h1>
 <form action="/" method="post" novalidate>
-    {{ form.hidden_tag() }}
+     {{ form.hidden_tag()  }}
     <p>
         {{ form.comment(_class='myclass') }}
 
@@ -216,10 +217,10 @@ This translates to the following in order to use our WTForms object we created b
 </form>
 ```
 
-The first curly bracket accesses the hidden_tag method of the WTForms form. This is a built in security feature of WTForms that our CommentForm class inherited from FlaskForm object. You should always include this in any form you render to keep your site and users safe from malicious actors. Next we access the Comment attribute, while we aren't going to actually implementing any css I did want to show you how to add a css class to WTForms form. Note that you have to put an underscore prior to the class argument. And finally there's the submit attribute which will render a button to submit the form your users fill out. 
+{% endraw %}
+The first curly bracket accesses the hidden_tag method of the WTForms form. This is a built in security feature of WTForms that our CommentForm class inherited from FlaskForm object. You should always include this in any form you render to keep your site and users safe from malicious actors. Next we access the Comment attribute, while we aren't going to actually implementing any css I did want to show you how to add a css class to WTForms form. Note that you have to put an underscore prior to the class argument. And finally there's the submit attribute which will render a button to submit the form your users fill out. Next We'll render our actual comments. Note that jinja's loop syntax is similar to python's, you can iterate over the key value pairs in the comments dict much in the same manner as you would with python but instead of double curly brackets your jinja code is wrapped in single curly brackets and a percentage sign also you need to explicitly end the for loop with an end for statement. An example is bellow:
 
-Next We'll render our actual comments. Note that jinja's loop syntax is similar to python's, you can iterate over the key value pairs in the comments dict much in the same manner as you would with python but instead of double curly brackets your jinja code is wrapped in single curly brackets and a percentage sign also you need to explicitly end the for loop with an end for statement. An example is bellow:
-
+{% raw %}
 ```html
             <ul>
                 {% for timestamp, comment in comments.items() %}
@@ -229,6 +230,7 @@ Next We'll render our actual comments. Note that jinja's loop syntax is similar 
             </ul>
 ```
 
+{% endraw %}
 
 With that all set up you should have a working site with comments enabled. In a production setting, you'd definitely want to switch away from json files and instead use a database like Mysql, POSTGRE SQL, or Mongo DB. But for the flask logic and jinja templating the overall system remains the same. 
 
