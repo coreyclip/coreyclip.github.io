@@ -220,7 +220,7 @@ The first curly bracket accesses the hidden_tag method of the WTForms form. This
 
 Next We'll render our actual comments. Note that jinja's loop syntax is similar to python's, you can iterate over the key value pairs in the comments dict much in the same manner as you would with python but instead of double curly brackets your jinja code is wrapped in single curly brackets and a percentage sign also you need to explicitly end the for loop with an end for statement. An example is bellow:
 
-```html
+```jinja
             <ul>
                 {% for timestamp, comment in comments.items() %}
                 <li>Date: {{ timestamp }}</li>
