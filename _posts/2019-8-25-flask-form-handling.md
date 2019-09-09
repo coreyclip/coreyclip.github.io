@@ -218,6 +218,7 @@ This translates to the following in order to use our WTForms object we created b
 
 The first curly bracket accesses the hidden_tag method of the WTForms form. This is a built in security feature of WTForms that our CommentForm class inherited from FlaskForm object. You should always include this in any form you render to keep your site and users safe from malicious actors. Next we access the Comment attribute, while we aren't going to actually implementing any css I did want to show you how to add a css class to WTForms form. Note that you have to put an underscore prior to the class argument. And finally there's the submit attribute which will render a button to submit the form your users fill out. 
 
+
 Next We'll render our actual comments. Note that jinja's loop syntax is similar to python's, you can iterate over the key value pairs in the comments dict much in the same manner as you would with python but instead of double curly brackets your jinja code is wrapped in single curly brackets and a percentage sign also you need to explicitly end the for loop with an end for statement. An example is bellow:
 
 ```jinja
