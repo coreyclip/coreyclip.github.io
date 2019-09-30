@@ -53,7 +53,7 @@ Now make a new python file called forms.py in your app directory
 
 And input the following imports  
 
-```python3
+```python
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, TextField
 from wtforms.validators import DataRequired
@@ -72,7 +72,7 @@ Finally we are going to import in TextArea from wtforms.widgets, this will let u
 Now let's create our actual form 
 
 
-```python3
+```python
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, TextField
 from wtforms.validators import DataRequired
