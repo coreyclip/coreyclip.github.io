@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a basic ETL Framework with Pandas and SqlAlchemy
-published: False
+published: false
 ---
 
 ## From Excel to Database
