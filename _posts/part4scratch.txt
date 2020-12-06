@@ -1,2 +1,0 @@
-
-In the previous posts we already went over how to use pandas to export our data into CSV files. 
