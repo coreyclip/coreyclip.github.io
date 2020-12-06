@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Quote Me Dev Diary Part 2: Webscraping
+published: true
 ---
 ## Who Does the Electoral College Disenfranchise?
 
@@ -41,7 +42,7 @@ tr:nth-child(even) {
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>State</th>
       <th>totalRegistered</th>
       <th>Pop</th>
       <th>registeredPerc</th>
@@ -52,19 +53,6 @@ tr:nth-child(even) {
       <th>Democrats</th>
       <th>Republicans</th>
       <th>Independents</th>
-    </tr>
-    <tr>
-      <th>State</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -164,7 +152,7 @@ First I opted to look at our dataset sorted by the number of registered Republic
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>State</th>
       <th>totalRegistered</th>
       <th>Pop</th>
       <th>registeredPerc</th>
@@ -175,19 +163,6 @@ First I opted to look at our dataset sorted by the number of registered Republic
       <th>Democrats</th>
       <th>Republicans</th>
       <th>Independents</th>
-    </tr>
-    <tr>
-      <th>State</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -352,7 +327,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>State</th>
       <th>totalRegistered</th>
       <th>Pop</th>
@@ -368,7 +342,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>California</td>
       <td>22047448</td>
       <td>39937500</td>
@@ -382,7 +355,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>6834709.0</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>New York</td>
       <td>13555547</td>
       <td>19440500</td>
@@ -396,7 +368,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>3659998.0</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>Texas</td>
       <td>16211198</td>
       <td>29472300</td>
@@ -410,7 +381,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>3080128.0</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>Florida</td>
       <td>14065627</td>
       <td>21993000</td>
@@ -424,7 +394,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>3938376.0</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>Pennsylvania</td>
       <td>9091371</td>
       <td>12820900</td>
@@ -438,7 +407,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>1272792.0</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>Illinois</td>
       <td>8036534</td>
       <td>12659700</td>
@@ -452,7 +420,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>1285845.0</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>Michigan</td>
       <td>8127040</td>
       <td>10045000</td>
@@ -466,7 +433,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>1300326.0</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>Ohio</td>
       <td>7774767</td>
       <td>11747700</td>
@@ -494,7 +460,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>1085038.0</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>Virginia</td>
       <td>5975696</td>
       <td>8626210</td>
@@ -540,7 +505,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>State</th>
       <th>totalRegistered</th>
       <th>Pop</th>
@@ -556,7 +520,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>California</td>
       <td>22047448</td>
       <td>39937500</td>
@@ -570,7 +533,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>6834709.0</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>Florida</td>
       <td>14065627</td>
       <td>21993000</td>
@@ -584,7 +546,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>3938376.0</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>New York</td>
       <td>13555547</td>
       <td>19440500</td>
@@ -598,7 +559,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>3659998.0</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>Texas</td>
       <td>16211198</td>
       <td>29472300</td>
@@ -612,7 +572,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>3080128.0</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>Massachusetts</td>
       <td>4812909</td>
       <td>6976600</td>
@@ -626,7 +585,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>2743358.0</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>New Jersey</td>
       <td>6486299</td>
       <td>8936570</td>
@@ -640,7 +598,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>2594520.0</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>North Carolina</td>
       <td>7361219</td>
       <td>10611900</td>
@@ -654,7 +611,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>2502814.0</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>Colorado</td>
       <td>4238513</td>
       <td>5845530</td>
@@ -668,7 +624,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>1780175.0</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>Arizona</td>
       <td>4281152</td>
       <td>7378490</td>
@@ -682,7 +637,6 @@ Independents are gathered in mostly the same states as Republicans and Democrats
       <td>1369969.0</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>Michigan</td>
       <td>8127040</td>
       <td>10045000</td>
@@ -726,7 +680,7 @@ Looking at the five most populous states in the US we can see that this is basic
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>State</th>
       <th>totalRegistered</th>
       <th>Pop</th>
       <th>registeredPerc</th>
@@ -737,19 +691,6 @@ Looking at the five most populous states in the US we can see that this is basic
       <th>Democrats</th>
       <th>Republicans</th>
       <th>Independents</th>
-    </tr>
-    <tr>
-      <th>State</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -882,7 +823,7 @@ Looking at the five most populous states in the US we can see that this is basic
       <td>3110441.0</td>
       <td>3038105.0</td>
       <td>1085038.0</td>
-    </tr>
+    <!-- </tr> -->
   </tbody>
 </table>
 </div>
@@ -947,9 +888,9 @@ One thought I had looking at this data given our rather hideous political climat
 
 #### Graphs 
 <p float="left">
-    <img src="/images/most_democrats.png" width="10" />
-    <img src="/images/most_republicans.png" width="10" />
-    <img src="/images/most_independents.png" width="10" />
+    <img src="/images/most_democrats.png"  />
+    <img src="/images/most_republicans.png"  />
+    <img src="/images/most_independents.png"  />
 </p>
 
 
