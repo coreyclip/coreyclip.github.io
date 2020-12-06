@@ -22,19 +22,23 @@ Here's the top 5 rows of the dataset. I calculated out the number of registered 
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+td, th {
+  border: 1px solid #11001C;
+  text-align: left;
+  padding: 8px;
+}
 
-    .dataframe thead th {
-        text-align: right;
-    }
+tr:nth-child(even) {
+  background-color: #eae0d5;
+}
 </style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -141,19 +145,23 @@ First I opted to look at our dataset sorted by the number of registered Republic
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
+    td, th {
+      border: 1px solid #11001C;
+      text-align: left;
+      padding: 8px;
     }
 
-    .dataframe thead th {
-        text-align: right;
-    }
+    tr:nth-child(even) {
+      background-color: #eae0d5;
+  }
 </style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -325,19 +333,23 @@ Looking at the states with the most Democrat voters. We can see that we basicall
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
+    td, th {
+      border: 1px solid #11001C;
+      text-align: left;
+      padding: 8px;
     }
 
-    .dataframe thead th {
-        text-align: right;
-    }
+    tr:nth-child(even) {
+      background-color: #eae0d5;
+}
 </style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -509,19 +521,23 @@ Independents are gathered in mostly the same states as Republicans and Democrats
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
+    td, th {
+      border: 1px solid #11001C;
+      text-align: left;
+      padding: 8px;
     }
 
-    .dataframe thead th {
-        text-align: right;
-    }
+    tr:nth-child(even) {
+      background-color: #eae0d5;
+}
 </style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -691,19 +707,23 @@ Looking at the five most populous states in the US we can see that this is basic
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
+    td, th {
+      border: 1px solid #11001C;
+      text-align: left;
+      padding: 8px;
     }
 
-    .dataframe thead th {
-        text-align: right;
-    }
+    tr:nth-child(even) {
+      background-color: #eae0d5;
+}
 </style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -876,48 +896,27 @@ By looking at the partisan composition of the states with the most democrats or 
 One thought I had looking at this data given our rather hideous political climate of today is how much potential do we waste with our undemocratic and anti-republican electoral college system? In effect the majority of democrats and republicans are basically taken as given in the actual election and instead our presidential politics is filtered through the lens of what matters to the voters in a couple of states. Unless your rather civically engaged this is most of the politics that really catches any of your attention. If instead we moved to popular vote the diversity of each political party would have to be taken into account by any candidate. We'd probably see more ideas out of the left and the right. This is purely annecdotal but coming from a resident of California, strong satisfaction with the priorities of either political party's candidate is very much the exception rather than the norm. Most feel dragged along with what has been given, and we loose out as a nation by not having their views informing our presidential campaigns. 
 
 
-```python
-limit = 10
-
-tdf = pd.DataFrame(index=[f'Top {limit} States with the most Democrats', f'Top {limit} States with the most Republicans', 'Nationwide Average'], data=[],
-             columns=['% Democrat', '% Republican', '% of Total Registered Voters'])
-tdf['% Republican'] = [df.sort_values('Democrats', ascending=False).head(limit)['RepubPercentage'].mean().round(3) * 100,
-                       df.sort_values('Republicans', ascending=False).head(limit)['RepubPercentage'].mean().round(3) * 100,
-                       df['RepubPercentage'].mean().round(3) * 100
-                      ]
-
-tdf['% Democrat'] = [  df.sort_values('Democrats', ascending=False).head(limit)['DemPercentage'].mean().round(3) * 100,
-                       df.sort_values('Democrats', ascending=False).head(limit)['RepubPercentage'].mean().round(3) * 100,
-                       df['DemPercentage'].mean().round(2) * 100
-                      ]
-tdf['% of Total Registered Voters'] = [(df.sort_values('Democrats', ascending=False).head(limit)['totalRegistered'].sum() / df['totalRegistered'].sum() * 100).round(3),
-                         (df.sort_values('Republicans', ascending=False).head(limit)['totalRegistered'].sum() / df['totalRegistered'].sum() * 100).round(3),
-                         np.nan]
-
-tdf
-```
-
-
-
-
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
+    td, th {
+      border: 1px solid #11001C;
+      text-align: left;
+      padding: 8px;
     }
 
-    .dataframe thead th {
-        text-align: right;
-    }
+    tr:nth-child(even) {
+      background-color: #eae0d5;
+}
 </style>
-<table border="1" class="dataframe">
+<table border="1" >
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>% Democrat</th>
       <th>% Republican</th>
       <th>% of Total Registered Voters</th>
@@ -948,9 +947,9 @@ tdf
 
 #### Graphs 
 <p float="left">
-    <img src="/images/most_democrats.png" width="100" />
-    <img src="/images/most_republicans.png" width="100" />
-    <img src="/images/most_independents.png" width="100" />
+    <img src="/images/most_democrats.png" width="10" />
+    <img src="/images/most_republicans.png" width="10" />
+    <img src="/images/most_independents.png" width="10" />
 </p>
 
 
