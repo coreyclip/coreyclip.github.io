@@ -446,7 +446,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
       <td>1088467.0</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>Georgia</td>
       <td>7233584</td>
       <td>10736100</td>
@@ -858,6 +857,7 @@ One thought I had looking at this data given our rather hideous political climat
 <table border="1" >
   <thead>
     <tr style="text-align: right;">
+      <th></th>
       <th>% Democrat</th>
       <th>% Republican</th>
       <th>% of Total Registered Voters</th>
@@ -885,13 +885,3 @@ One thought I had looking at this data given our rather hideous political climat
   </tbody>
 </table>
 </div>
-
-#### Graphs 
-<p float="left">
-    <img src="/images/most_democrats.png"  />
-    <img src="/images/most_republicans.png"  />
-    <img src="/images/most_independents.png"  />
-</p>
-
-
-
