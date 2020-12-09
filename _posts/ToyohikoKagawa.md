@@ -1,3 +1,9 @@
+---
+layout: post
+title: Processing User Input, with Flask-WTForms
+published: false
+---
+
 
 "I read in a book that a man called Christ went about doing good. It is very disconcerting to me that I am so easily satisfied with just going about." - Toyohiko Kagawa 
 
