@@ -826,9 +826,7 @@ Looking at the five most populous states in the US we can see that this is basic
 </table>
 </div>
 
-
-
-# The Electoral College disenfranchises people regardless of political affiliation
+## The Electoral College disenfranchises people regardless of political affiliation
 
 By looking at the partisan composition of the states with the most democrats or Republicans we can see that essentially by doing away with the electoral college and moving to a straight popular vote, it wouldn't mean that presidential candidates would be ignoring one political party or the other by campaigning in states where most voters live. A candidate looking to reach out to Republican voters or Democratic voters would do well to focus on Texas, California, and New York as these are plain where the bulk of either live. And by doing so they wouldn't be really disregarding the partisan composition of the nation as a whole. The partisan composition of the most democratic and republicans states doesn't really differ too much from the nationwide average, especially once we take into account that the states with the most democrats or republicans are for the most part the same.  
 
