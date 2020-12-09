@@ -480,8 +480,6 @@ Looking at the states with the most Democrat voters. We can see that we basicall
 
 Independents are gathered in mostly the same states as Republicans and Democrats, Though check out Massachusetts! One thing worth noting that certain states through a combination of voting laws and partisan party rules end up depressing political party membership, amongst other factors. Since this post is just focusing on partisan politics I'm not really going to try and account for Independents too much it's an area for further investigation on the topic I'm covering. 
 
-
-
 <div>
 <style scoped>
     table {
@@ -821,7 +819,7 @@ Looking at the five most populous states in the US we can see that this is basic
       <td>3110441.0</td>
       <td>3038105.0</td>
       <td>1085038.0</td>
-    <!-- </tr> -->
+    </tr>
   </tbody>
 </table>
 </div>
