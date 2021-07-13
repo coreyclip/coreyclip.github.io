@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Quote Me Dev Diary Part 1
+tags: project 
 ---
 ## Quote Me: The Quoting Moody Therapist of Your Dreams
 Hello everyone this is the first chapter of the development diary for a meandering app idea I have and wanted to work on more as fun side project rather than anything that could possibly ever make me money. I'm a huge fan of quotes, like the kinds you see slapped on motivational posters. Mantras, sayings, proverbs etc. I tend to journal irregularly but what I do keep close to me are both digital and physical collections of quotes I've collected over the years. I unironically can spend hours scrolling through wikiquote.org looking for new ones to add to my collection. Recently I thought to myself that it would be cool if I could speak to my computer about my current mood or thoughts and have it respond to me with a relevant quote. Pondering this I thought it would be a good application to practice my existing skillset and expand into new ones. 

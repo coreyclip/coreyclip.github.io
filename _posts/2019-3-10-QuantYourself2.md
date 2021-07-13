@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Starter Data Science Project The Quantified Self, part 2
+tags: beginner python excel tutorial
 ---
 
 ## Performing Descriptive Stats with Python

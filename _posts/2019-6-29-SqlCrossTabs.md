@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SQL Tricks, Mimicing Crosstabs 
+tags: sql tutorial
 ---
 
 ## Transforming Rows into Columns 

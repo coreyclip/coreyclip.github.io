@@ -1,5 +1,6 @@
 ---
 layout: post
-title: Who Does the Electoral College Disenfranchise?
+title: The relevant witness of Toyohiko Kagawa, Japan's forgotten "radical" Christian 
 published: false
+tags: religion blog
 ---
