@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Who Does the Electoral College Disenfranchise?
+title: Political Campaign SMS Dashboard Preview
 published: true
-tags: blog politics data 
+tags: project politics data 
 ---
 # Political SMS Dataset Preview
 Since around the 2020 election I've been getting regular text messages from both the Biden and Trump campaign via text messages. In preparation for the midterm elections in 2022 I decided to work at mining these text messages as data to gain better insight into how these medium in used in partisan campaigns and try to decipher how these campaigns view their base. The dataset currently spans January 2021 to the current date of me writing this November 2021 and contains all of the text messages sent to me from 88022 which is the Trump campaign, 52005 the Warnock campaign, and 43367 the Biden campaign. My ultimate vision for this project is to gather text messages from as many campaigns as possible and display both the text and visualizations in a web based dashboard. But for now this is a preview of the data as it stands today. 
