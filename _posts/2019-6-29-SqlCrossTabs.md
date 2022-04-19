@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SQL Tricks, Mimicing Crosstabs 
+published: true 
 tags: sql tutorial
 ---
 
