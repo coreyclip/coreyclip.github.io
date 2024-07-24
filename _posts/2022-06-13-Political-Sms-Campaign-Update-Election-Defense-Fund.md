@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Political Campaign SMS - Update: Election Defense Fund 
+title: Political Campaign SMS Update Election Defense Fund 
 published: true
 tags: project politics data 
 ---
