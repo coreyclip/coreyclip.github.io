@@ -4,6 +4,8 @@ title: Political Campaign SMS - Update: Election Defense Fund
 published: true
 tags: project politics data 
 ---
+
+# Trump's Election Defense Fund 
 I'm slowly but surely picking away at getting a interactive UI in front of the political campaign text messages I've been collecting for the past year or so but while I dally between different frameworks and troubleshoot my etl (excited to try out airflow for this). I figured I'd give a shout out to the fact that some of the data I've been gathering has been mentioned in the news lately. 
 
 A topic brought up during the recent Jan 6th Commission hearings was Trump's messaging to supporters about a supposed ["Election Defense Fund"](https://www.rollingstone.com/politics/politics-news/trump-fundraising-scam-jan-6-hearing-1367359/) which is currently being pointed to as a scam, as in it didn't really exist and donations were pocketed. 
