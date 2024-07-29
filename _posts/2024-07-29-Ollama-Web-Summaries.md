@@ -20,26 +20,26 @@ from dotenv import load_dotenv
 # set OLLAMA_MODEL env var or create a .env file with OLLAMA_MODEL set to the model of your choice
 load_dotenv()
 
-ollama_model = os.getenv('OLLAMA_MODEL','llama3')
+ollama_model = os.getenv("OLLAMA_MODEL","llama3")
 
 def save_to_markdown(title, content, url, filename):
     """
     ## saves content to markdown file via predefined fancy format
     ### Args:
-        - `title (str)`: webpage title 
-        - `content (str)`: content return from langchain
-        - `url (str)`: source url 
-        - `filename (str)`: filename for outputted markdown file 
+        - title (str): webpage title 
+        - content (str): content return from langchain
+        - url (str): source url 
+        - filename (str): filename for outputted markdown file 
     """
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    word_count = len(content['output_text'].split())
-    with open(filename, 'w', encoding='utf-8') as f:
+    word_count = len(content["output_text"].split())
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(f"# {title}\n\n")
         f.write(f"**Source URL:** {url}\n\n")
         f.write(f"**Timestamp:** {timestamp}\n\n")
         f.write(f"**Word Count:** {word_count}\n\n")
         f.write(f"---\n\n")
-        f.write(content['output_text'])
+        f.write(content["output_text"])
 
 def main():
     # setting up commandline arguments
@@ -60,14 +60,14 @@ def main():
 
     # Extract webpage title and other metadata
     title = "Webpage Summary"  # Default title if none is found
-    if docs and docs[0].metadata and 'title' in docs[0].metadata:
-        title = docs[0].metadata['title']
+    if docs and docs[0].metadata and "title" in docs[0].metadata:
+        title = docs[0].metadata["title"]
 
     if args.output:
         save_to_markdown(title, result, args.website,
                         args.output)
     else:
-        word_count = len(result['output_text'].split())
+        word_count = len(result["output_text"].split())
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(f"# {title}\n")
         print(f"**Source URL:** {args.website}\n")
