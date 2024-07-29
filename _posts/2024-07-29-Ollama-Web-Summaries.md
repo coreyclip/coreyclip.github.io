@@ -8,7 +8,8 @@ tags: github tutorial
 # Summarizing Web Pages with Ollama 
 Hey everyone like all of you (hopefully), I too have been looking at large langauge models and trying to integrate them into my workflows in new and creative ways. In particular I've been enjoying working with the [Ollama](https://ollama.com/) project which is a framework for working with locally available open source large language models, aka do chatgpt at home for free. Here's a short script I created from Ollama's examples that takes in a url and produces a summary of the contents. I use this along with my read it later apps to create short summary documents to store in my obsidian vault. Thereby integrating pieces of information into my boarder and searchable second brain just by providing a url, eventually I want to hook this up to the newsletters I read so I can automate the process further. Here's the full script with added comments. 
 
-```python web_summarize.py
+```python
+
 import argparse
 import os
 import datetime
@@ -23,14 +24,6 @@ load_dotenv()
 ollama_model = os.getenv("OLLAMA_MODEL","llama3")
 
 def save_to_markdown(title, content, url, filename):
-    """
-    ## saves content to markdown file via predefined fancy format
-    ### Args:
-        - title (str): webpage title 
-        - content (str): content return from langchain
-        - url (str): source url 
-        - filename (str): filename for outputted markdown file 
-    """
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     word_count = len(content["output_text"].split())
     with open(filename, "w", encoding="utf-8") as f:
