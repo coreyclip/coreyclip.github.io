@@ -2,7 +2,7 @@
 layout: post
 title: Minimally Technical Low Code Github Pages Website 
 published: true
-tags: github tutorial
+tags: github tutorial technical
 ---
 # Save money use a static website generator
 I created my first youtube video and it's a overly long and meticulous tutorial on creating a completely free website with github pages, similar to the website hosting this blog. 

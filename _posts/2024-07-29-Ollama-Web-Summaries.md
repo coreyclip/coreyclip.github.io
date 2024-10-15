@@ -2,7 +2,7 @@
 layout: post
 title: Summarizing Web Pages with Ollama
 published: true
-tags: github tutorial
+tags: github tutorial technical
 ---
 
 # A Simple yet Useful Local LLM Project

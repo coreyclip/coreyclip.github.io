@@ -2,7 +2,7 @@
 layout: post
 title: Political Campaign SMS Update Election Defense Fund 
 published: true
-tags: project politics data 
+tags: project politics data technical
 ---
 
 # Trump's Election Defense Fund 
