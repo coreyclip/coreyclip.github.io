@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Program
-tags: beginner blog 
+tags: beginner blog technical
 ---
 
 ## It's really just about typing

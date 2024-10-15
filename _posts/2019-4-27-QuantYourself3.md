@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Starter Data Science Project The Quantified Self, part 3
-tags: beginner python excel tutorial
+tags: beginner python excel tutorial technical
 ---
 
 ## Data and Visualization with Jupyter

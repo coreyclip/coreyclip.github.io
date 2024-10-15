@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paths Forward
-tags: beginner blog
+tags: beginner blog technical
 ---
 
 ## Getting started in the Programming World

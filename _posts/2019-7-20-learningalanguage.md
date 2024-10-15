@@ -2,7 +2,7 @@
 layout: post
 title: The three stages of programming language mastery
 published: true
-tags: blog
+tags: blog technical
 ---
 ## Programmatic language aquisition
 It dawned on me the other day while talking to someone new to programming that learning a programming language follows steps that mirror human language aquisition. 

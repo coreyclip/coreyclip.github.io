@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Processing User Input, with Flask-WTForms
-tags: flask python tutorial
+tags: flask python tutorial technical
 ---
 
 ## Adding user comments to your website
