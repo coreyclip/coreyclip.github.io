@@ -33,7 +33,7 @@ body {
 }
 
 #top-container{
-    background-color: rgb(79, 93, 117);
+    background: url("images/flower.jpg") no-repeat center center fixed;
     color:whitesmoke;
     
 }
@@ -219,9 +219,9 @@ img {
 
     img {
         color: $gunmetal;
-        border-style: dashed;
         width: 70%!important;
         height:auto;
+        clip-path: circle();
     }
 }
 
