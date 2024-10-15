@@ -2,7 +2,7 @@
 layout: post
 title: Reflecting on Grief pt 2 - orchids, responses to trauma, riding the waves
 published: true
-tags: grief personal blog
+tags: personal
 ---
 
 ## watering plants

@@ -2,7 +2,7 @@
 layout: post
 title: Personal Experiences With Grief part 1
 published: true
-tags: grief personal blog
+tags: personal
 ---
 
 # First things 
