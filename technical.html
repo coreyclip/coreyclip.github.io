@@ -1,0 +1,15 @@
+<!-- technical.html -->
+---
+layout: default
+title: Technical Posts
+---
+
+<h1>Technical Posts</h1>
+<ul>
+  {% assign technical_posts = site.posts | where: "tags", "technical" %}
+  {% for post in technical_posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>

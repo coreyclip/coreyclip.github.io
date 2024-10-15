@@ -1,0 +1,15 @@
+<!-- personal.html -->
+---
+layout: default
+title: Personal Blog Posts
+---
+
+<h1>Personal Blog Posts</h1>
+<ul>
+  {% assign personal_posts = site.posts | where: "tags", "blog" %}
+  {% for post in technical_posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
