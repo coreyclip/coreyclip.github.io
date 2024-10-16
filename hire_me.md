@@ -4,8 +4,6 @@ title: Consulting
 permalink: /consulting/
 ---
 
-# Hire Me
-
 Weather you need help setting up and maintaining data infastructure, optomize an existing database, need training on how to leverage python, or want to set up a website I'm available for both training and contract work!
 
 ## Initial Consult
