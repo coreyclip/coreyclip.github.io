@@ -10,9 +10,11 @@ Weather you need help setting up and maintaining data infastructure, optomize an
 
 Before starting I offer a 45 minute video consultation to best assess needs and gather enough information to provide a project plan and quote. After the call I'll provide a prompt email with prices, milestones, and timelines.
 
-Contact: Coreyclip@gmail.com 
-Fivver: https://www.fiverr.com/coreyclipp
-Upwork: https://www.upwork.com/freelancers/coreyclippinger
+- Email: Coreyclip@gmail.com 
+
+- [Fivver](https://www.fiverr.com/coreyclipp)
+
+- [Upwork](https://www.upwork.com/freelancers/coreyclippinger)
 
 ## Areas of Expertise
 
