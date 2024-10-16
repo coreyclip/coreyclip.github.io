@@ -2,7 +2,7 @@
 layout: post
 title: The King of Kings and Political Idols 
 published: true
-tags: reddit blog
+tags: personal
 ---
 
 # What could go wrong when invoking the legacy of Cyrus the Great? 

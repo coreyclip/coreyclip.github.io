@@ -2,7 +2,7 @@
 layout: post
 title: Accountability is collective or non-existant. 
 published: true
-tags: hot_take thoughts blog
+tags: personal
 ---
 
 # Why do we keep on getting narcisists running things? 
