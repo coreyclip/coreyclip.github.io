@@ -4,18 +4,20 @@ title: My Obsidian Daily Notes Template
 published: true
 tags: Technical
 ---
-```
-## Tasks for this week
+
+## Daily notes template for use in Obsidian 
+
+```markdown
+**## Tasks for this week**
 ```tasks
 due on or before this week
 not done
-```
+``` 
+## Journal Entries  
 
-## Journal Entries
--  
-## What will you do today that will be right
+## What will you do today that will be right 
 what lives will you touch, what will you do for yourself, what did you learn? 
 
-## Capture
+## Capture 
 #capture
-```
+``` 
