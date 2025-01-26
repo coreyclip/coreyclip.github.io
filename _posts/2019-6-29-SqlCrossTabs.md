@@ -5,7 +5,7 @@ published: true
 tags: sql tutorial technical
 ---
 
-## Transforming Rows into Columns 
+# Transforming Rows into Columns 
 SQL is pretty straight forward to get into yet despite the ubiquity of SQL Databases, there is comparatively few online resources on how to think about and troubleshoot complex queries. 
 While it's maybe not the most alluring aspect of data science, it's pretty darn near foundational. In my current job, basically my entire job in one shape or form goes back to queries to our MySQL Database. While generally you want to design your database in a manner that makes reading and writing to the database easier. You'll often find yourself in situations where you'll have to use more sophisticated SQL queries. One common case basically involves transforming data that is held in rows into columns. This can be achieved in a crosstab query. 
 

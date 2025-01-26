@@ -5,6 +5,7 @@ published: true
 tags: personal
 ---
 
+# Grief: Final thoughts
 This is the final part of my three part set of reflections on grief you can find [part one](https://coreyclip.github.io/Personal-Experinences-with-grief-1/) and [part two](https://coreyclip.github.io/Personal-Experinece-grief-two/) in these links. 
 
 In the previous parts of my reflections I covered the spiraling and descending nature of grief. How the initial shock and loss of innocence when facing loss shakes us to the core and how if we let it, settling into the bottom of the our sadness brings new life. In this final post I want to wrap up these themes and offer what I hope will be more value. 

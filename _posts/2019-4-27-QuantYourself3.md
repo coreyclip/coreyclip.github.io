@@ -4,7 +4,7 @@ title: Starter Data Science Project The Quantified Self, part 3
 tags: beginner python excel tutorial technical
 ---
 
-## Data and Visualization with Jupyter
+# Data and Visualization with Jupyter
 Jupyter notebooks were originally conceived of as a portable means of combining code and written research, and in my opinion an excellent environment for exploring data and toying around with different data engineering operations. 
 
 Jupyter notebooks are made up of text blocks in either code or markdown. Markdown is a quick and efficient way of writing text and formatting all in one go. I already showed you how to write comments in code, but with markdown you can write detailed explanations of what your code blocks are doing or give commentary on what's being outputted by adjacent code cells. 

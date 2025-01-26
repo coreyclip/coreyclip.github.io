@@ -4,7 +4,8 @@ title: The three stages of programming language mastery
 published: true
 tags: blog technical
 ---
-## Programmatic language aquisition
+
+# Programmatic language aquisition
 It dawned on me the other day while talking to someone new to programming that learning a programming language follows steps that mirror human language aquisition. 
 
 First we start by simply parroting. Think of a young child repeating words that his or her parents speak to it. Consider a person with one semester of spanish navigating Mexico city. We start by simply throwing out patterns of words one has memorized. And depending on our luck, get either the responses we are looking for and thus reinforcing the pattern or something completely different which frustrates us. When I taught English as a foreign language, we'd see this behavior in beginners. While the goal was and should be to move beyond mere imitation. I considered it to be better than nothing. At least you're trying at this stage and that puts you in the game. And you cannot succeed at any game you don't even start playing. I did a lot of parroting back when I was learning foreign languages. Looking back I can see how I may have picked up bad habits from mimicking speech patterns that I did not understand. But at least by doing so I steadily began to increase my vocabulary and begin to acquire rudimentary grammar structures and slightly improved pronunciation.  

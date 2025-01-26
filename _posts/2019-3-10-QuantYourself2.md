@@ -4,7 +4,7 @@ title: Starter Data Science Project The Quantified Self, part 2
 tags: beginner python excel tutorial technical
 ---
 
-## Performing Descriptive Stats with Python
+# Performing Descriptive Stats with Python
 In my previous post we started with downloading and installing the Anaconda
 python distribution and loaded our health data CVS into a Python interpreter. I
 know that a lot of that installation work and perhaps figuring out pathing may

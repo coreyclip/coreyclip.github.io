@@ -5,8 +5,7 @@ published: true
 tags: Technical
 ---
 
-## Motivation
-
+# Motivation
 Years ago when I was still in university, I had the opportunity to learn from [Tiago Forte](https://fortelabs.com) back when he was first getting his start in becoming a sort of note taking guru. I was slammed with trying to complete two thesis (double major), some tough math classes, an RA gig in the freshmen dorms, and trying to apply for the peace corps (under the old system mind you). I was originally just supposed to just get his advice on how to put my peace corps application together but after simply admitting that I felt completely overwhelmed and unable to put in the time to do it. Tiago calmed me down over zoom and instead offered to give me a rundown on his task management system that he was trying to sell a course on. Since then I've watched him go from teaching David Allen's Get Things Done, to a class on Evernote, onto a more generalized Building a Second Brain course, and now I believe Personal Knowledge Management is what he terms his craft now.
 
 I've found his framework extremely useful over the years. Even when implemented in doses and pieces it can help bring a lot of structure to what otherwise could be a quite chaotic life. My tools and workflow has morphed over time but I wanted to take the time to quickly give an overview of what I'm currently using.
