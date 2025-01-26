@@ -73,7 +73,7 @@ And yeah it's free* though you can pay to have Obsidian store and sync your note
 
 #### Daily Journal
 
-link to daily journal template [here](https://coreyclip.github.io/2025-my-obsidian-daily-notes-template/)
+link to daily journal template [here](https://gist.github.com/coreyclip/6cfbe21cae86ddee127aa94ad59d53b3)
 
 **The Daily Journal**:
 
@@ -90,6 +90,11 @@ Journal Entries Header
 - I have a Journal Entries section where I log entries throughout the day: tasks, notes, reminders, thoughts, etc. all go under this header. I use the Obsidian tasks plugin to create tasks which then appear in future journals. I also have a document with an Obsidian query that pulls up all of my tasks. 
 
 - Tag entries by subject, type, and connections for effective organization. I am chaotic about this and it works for me. Sometimes I have tags that are similar in nature overgenerating results when I search for them but the time it takes to simply pick the right document vs stressing about the tags isn't a good trade off. 
+
+#### What will you do section
+This is more of a mindset framing exercise. I usually put down notes to myself for the day and I frequently adjust the prompt here to whatever best seems to get me thinking about my day in a productive manner. I frequently forget to put anything and instead just hit the ground running on my tasks and journal. But my days do generally go better if I just type down some notes to remind myself to stretch, take a walk, call that friend or family member, and learn something new
+
+
 #### Capture Section
 
 **Manages Incoming Information:**
