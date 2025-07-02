@@ -4,7 +4,7 @@ title: Voting From Taiwan in US Federal Elections
 published: true
 tags: voting 
 ---
-## How to Vote in US Elections from Taiwan: Quick Guide
+# How to Vote in US Elections from Taiwan: Quick Guide
 Here's the main steps for U.S. citizens living in Taiwan who want to vote in the upcoming U.S. federal elections based on information from the American Institute of Taiwan:
 
 1. **Request Your Ballot**: 

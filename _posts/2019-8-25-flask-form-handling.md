@@ -4,7 +4,7 @@ title: Processing User Input, with Flask-WTForms
 tags: flask python tutorial technical
 ---
 
-## Adding user comments to your website
+# Adding user comments to your website
 In this post I'll go over how to expand a basic html serving flask website to a more dynamic website including content that you the web developer has put in and content added by users of the site. While creating comments is the clearest use case for these techniques. The broad strokes apply to most cases when you want information from your front end to communicate with your backend. 
 
 To start out consider this basic flask website structure 
