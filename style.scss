@@ -314,13 +314,16 @@ nav {
 
 .post {
     blockquote {
-        margin: 1.8em 0.8em;
-        border-left: 2px solid $gray;
-        padding: 0.1em 1em;
-        padding-bottom: 15%;
-        color: $gray;
-        font-size: 22px;
+        margin: 1.8em 0;
+        border-left: 4px solid $ochre;
+        padding: 0.4em 1.2em;
+        color: $cordal;
+        font-size: 20px;
         font-style: italic;
+        background: rgba(244, 211, 94, 0.10); // faint grain tint
+        border-radius: 0 6px 6px 0;
+
+        p { margin: 0.4em 0; }
     }
 
     .comments {
@@ -330,7 +333,172 @@ nav {
     .read-more {
         text-transform: uppercase;
         font-size: 15px;
-        color: $blue;
+        color: $ochre;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+}
+
+/****************************/
+/* SINGLE POST READING VIEW */
+/****************************/
+
+.post--single {
+    max-width: 760px;
+    margin: 0 auto;
+
+    // Post title + byline
+    > h1 {
+        font-size: 34px;
+        line-height: 1.25;
+        margin: 0.2em 0 0.15em;
+    }
+
+    > .date {
+        display: block;
+        margin-bottom: 2.2em;
+        font-size: 15px;
+        font-style: normal;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $cordal;
+    }
+
+    .entry {
+        font-size: 19px;
+        line-height: 1.75;
+        color: $gunmetal;
+
+        p { margin: 1.15em 0; }
+
+        // In-article section headings
+        h1,
+        h2 {
+            font-size: 25px;
+            line-height: 1.3;
+            margin: 1.9em 0 0.6em;
+            padding-bottom: 0.25em;
+            border-bottom: 1px solid rgba(79, 93, 117, 0.22);
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 1.5em 0 0.5em;
+        }
+
+        // Body links: underline instead of weight-shift (no reflow on hover)
+        a {
+            color: $ochre;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(239, 131, 84, 0.45);
+            transition: color 0.15s ease, border-color 0.15s ease;
+
+            &:hover,
+            &:active {
+                color: $gunmetal;
+                font-weight: normal;
+                border-bottom-color: $gunmetal;
+            }
+        }
+
+        ul,
+        ol {
+            margin: 1.15em 0;
+            padding-left: 1.6em;
+        }
+
+        li { margin: 0.35em 0; }
+
+        // Inline code
+        code {
+            font-family: $monospace, monospace;
+            font-size: 0.85em;
+            background: rgba(45, 49, 66, 0.08);
+            color: $navy;
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+        }
+
+        // Fenced code blocks (dark theme from _highlights.scss)
+        .highlight {
+            background: #3f3f3f;
+            border-radius: 8px;
+            margin: 1.6em 0;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(45, 49, 66, 0.18);
+
+            pre {
+                margin: 0;
+                overflow-x: auto;
+                padding: 1.1em 1.3em;
+                background: transparent;
+            }
+
+            // reset the inline-code chip styling; keep the syntax theme's colors
+            code {
+                background: transparent;
+                padding: 0;
+                border-radius: 0;
+                font-size: inherit;
+            }
+        }
+
+        // Images
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1.8em auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 14px rgba(45, 49, 66, 0.20);
+        }
+
+        // Tables (scroll horizontally on narrow screens)
+        table {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            border-collapse: collapse;
+            margin: 1.8em 0;
+            font-size: 16px;
+            line-height: 1.5;
+
+            th,
+            td {
+                padding: 0.6em 0.9em;
+                text-align: left;
+                vertical-align: top;
+                border-bottom: 1px solid rgba(79, 93, 117, 0.22);
+            }
+
+            thead th {
+                background: $navy;
+                color: $light;
+                border-bottom: none;
+            }
+
+            tbody tr:nth-child(even) {
+                background: rgba(79, 93, 117, 0.06);
+            }
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(79, 93, 117, 0.25);
+            margin: 2.6em 0;
+        }
+    }
+
+    @include mobile {
+        > h1 { font-size: 27px; }
+
+        .entry {
+            font-size: 17px;
+
+            h1,
+            h2 { font-size: 22px; }
+        }
     }
 }
 

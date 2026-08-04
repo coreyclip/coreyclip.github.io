@@ -2,23 +2,15 @@
 layout: default
 ---
 
-<article class="post mb-5">
-    <style>
-
-     img {
-         width:60rem;
-         height:auto;
-     }
-
-    </style>
+<article class="post post--single mb-5">
     <h1>{{ page.title }}</h1>
-
-    <div class="entry">
-        {{ content }}
-    </div>
 
     <div class="date">
         Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+
+    <div class="entry">
+        {{ content }}
     </div>
 
     {% include disqus.html %}
