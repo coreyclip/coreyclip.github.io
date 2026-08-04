@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Obsidian + Claude, My Note-Taking System
+title: Obsidian + Claude 
 published: true
 tags: technical
 ---
 
-# Why bother: your mind is a bad notebook
-
+# My implimentation of the Karpathy LLM Wiki Method
 Your brain is brilliant at thinking and terrible at storage. It's a lousy calendar it forgets appointments, or worse, nags you about them at 2am. It's a lossy notebook an idea you had on a walk or in the middle of a conversation is gone an hour later. Every open loop you try to hold in your head is a background process quietly eating the attention you'd rather spend on the actual work.
 
 The solution is as old as written language: get it out of your head and onto something durable. Write it down. Once a thought lives somewhere reliable, your mind is free to stop guarding it and go back to thinking. 
