@@ -1,55 +1,52 @@
 ---
 layout: post
-title: Should, and Yes, And
+title: Should and Yes
 published: true
 tags: personal
 ---
 
-In a coaching session this week I was given a small exercise. The next time you hear yourself say "should," swap the word out and notice what comes up.
+What should you do? What should happen? Certainty is something we are both oversupplied with and yet never have enough. You order a uber and it says it should reach you by x time. You study, polish your resume, and apply to jobs, and you should get one right? Our words and our language are meant to approximate the reality around us, the feelings we have, and the ways we think. Do we acknowledge that this is also a two way street? How we talk about the world and our experiences shapes us more than it can directly shape the world around us. With this I reflect on what my relationship is to what "should" have happened at this point in my life. 
 
-This post is what came up.
-
-## Should is everywhere
-
-What should you do? What should happen? We are oversupplied with certainty and still never have enough of it. Your Uber says it should reach you by a certain time. You study, polish your resume, and apply, so you should get a job, right?
-
-Language is supposed to approximate the reality around us: the feelings we have, the ways we think. But it runs both directions. How we talk about the world shapes us more than it shapes the world. So I started asking what my own relationship is to what "should" have happened by this point in my life.
 
 ## Should is not a law
 
-Most of what should happen, or what we should do, comes from outside us. When I turn on the faucet, water should come out. It has many times before, and I know people who work in the water department, so I live comfortably in a world where water comes from the tap. But that isn't a law of nature. It rests on my understanding of how the city I live in works, and on systems that happen to be up and running. If the water stopped one day I'd be surprised, but I'd also understand why.
+- Should and have-to are just someone's opinion. Sometimes it's ours, often it's inherited.
+- We still run our lives by them and give them a lot of power
+- Where your shoulds came from: church, family, career, the internet
 
-How far do shoulds like that reach beyond public utilities?
+So much of what should happen or what we should do, come from outside of us. When I turn the faucet on, water should come out. Not only has this happened many times before but knowing the people working in the water department, I generally live in the world where water should come from the faucet. But this isn't built on some kind of law but on my understanding how the place and city I live in functions. Not that I wouldn't be surprised that one day the water didn't come, but instead that I understand it to be something predicated on systems that are up and functioning. But how far do these should's extend outside of the public utilities? 
+- This person should act this way
+- If I call this person they should pick up
+- If I gain this qualification I should get the job
+- My life should be peaceful
+- I did nothing wrong, my life should be easy 
 
-- This person should act this way.
-- If I call, they should pick up.
-- If I earn this qualification, I should get the job.
-- My life should be peaceful.
-- I did nothing wrong, so my life should be easy.
-
-Where did these come from? Do they actually know?
+Where did this come from? Does it really know? 
 
 ## The hidden contract
 
-"If I do X, Y should happen" quietly turns effort into a demand on reality. It is a contract the other party never signed.
+"- "If I do X, then Y should happen." Should quietly turns effort into a demand on reality.
+- When Y doesn't come: resentment, shame, feeling cheated
+- **Take should out and hope can happen.** The same action, held open-handed.
+- Possible tie-in: the Pill Game idea that no philosophy can promise outcomes over what you don't control
 
-When Y doesn't arrive, what comes instead is resentment, shame, a sense of betrayal, frustration. Whether the contract came from society, family, or some stranger's opinion online matters less to me than what I say and do with it. If I fixate on who lied to me, I'm still trapped in the idea that certainty is available, that if I do the right things, blessings will rain down. I'm just looking for a new rain god to pray to.
+Weather it's from society, family, or some random opinions online. Where it comes from is secondary to what is said and done. If we fixate on who "lied" to us we are still trapped in this notion that we can have certainty, that if we do the right things blessing will rain down. We look for a new rain god to pray to. 
 
-What I think about more is how to recognize that I'm praying for rain. I can't know it will come. I can hope it will. I've seen my best efforts lead to nothing, and I've seen lackluster effort bring more rain than I could handle.
+Instead what I think about more is how I can at least recognize that I am indeed praying for rain. It's not that the rain will come but that instead that I hope it will. In the end, I have from experience seen where my efforts led to nothing. While my lackluster effort has led to more rain than I can deal with. When should doesn't work, what comes? 
+- resentment 
+- shame 
+- a sense of betrayal 
+- frustration 
 
 ## Yes, and
 
-Richard Rohr, the Franciscan priest, writes about two ways of seeing. The dualistic mind sorts everything into either/or, right/wrong, should/shouldn't. The contemplative mind, which he calls nondual, makes room for both/and. His book of daily meditations is titled *Yes, And...*
+Can we rid ourselves of the above? I think not but perhaps we can hope for it instead. Between a deterministic and nihilistic worldview, there exists the real lived experience from the first hunter gatherer and the uber driver working late nights. I rarely get there but when I try to live intentionally away from the notions of either/or, should/shouldn't, this or that. And instead accept both/ yes and: two binaries can exist in the same fact, thing, and especially persons. Yes, we can question the world and what it seems to do, but in the end the world remains while we will pass on. You can't really outlast the world in asking it "why?" when it's you on the timed test of you asking it what you will do.
 
-I read "yes" as accepting what is, without first demanding that it be different. "And" is the freedom to still act, hope, and change things, without having to win the argument with reality first.
+Accept "ok fine" as the only real prayer one can make with certainty. That is to embrace imperfection, let go of control, and accept the messy unfinished project that is my life, your life, and our stories. 
 
-Can I rid myself of should entirely? I doubt it. But I can hope instead. Between a deterministic worldview and a nihilistic one sits the lived experience of everyone from the first hunter-gatherer to the Uber driver working late tonight. I rarely get there, but I try to live away from this-or-that and toward the idea that two opposites can be true of the same fact, the same situation, and especially the same person. Yes, we can question the world and what it seems to do. And the world will remain after we've passed on. You can't outlast the world by asking it why when you're the one on the timed test.
+There's a world, worth living in and one that none of can escape. It's both happy and sad, it has opportunity and robs us of it all the time, it's both fair and predictable yet all you can really do is hope for things and experiences, never be guaranteed them. 
 
-The only prayer I can make with certainty is "ok fine." That means accepting imperfection, loosening my grip on control, and accepting the messy, unfinished project that is my life, your life, and our stories.
-
-The world is worth living in, and none of us can leave it. It is happy and sad. It offers opportunity and takes it away all the time. It is fair and predictable, and still all you can do is hope for things and experiences, never be guaranteed them.
-
-## Swapping it in
+## Swapping
 
 When I briefly look at what I believe should happen and swap in what I can hope for, things change. What I offer becomes less of a trade and more of an aspiration, something that might surprise me.
 
@@ -61,9 +58,6 @@ When I briefly look at what I believe should happen and swap in what I can hope 
 
 The same works outward. A "should" aimed at another person is often an attempt at control. Curiosity, or an honest request, usually does better.
 
-## Which voice is speaking
+## In Closing
 
-None of this means giving up standards. I'll still do my personal and professional obligations. What changes is knowing which voice is speaking: the law I inherited, or the hope I actually have. My expectations are lighter, and so are my burdens.
-
-I'm sure I'll forget this tomorrow. As with most things, writing it down helps.
-
+In doing and saying all of this I don't see the removal of standards or giving up what I do from the should categories in my life. I'll still do my personal and professional obligations. But my expectations are lessened, and in that my burdens are loosened. I'm sure I will forget this tomorrow but as in everything writing it down helps. 
