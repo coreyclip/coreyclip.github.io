@@ -12,13 +12,17 @@
   minimal personal content would need tagging `technical` or go under `index.html` only.
 
 ## 3. Things Corey said he'd do
+- [ ] **wiki-update contradicts itself on `# Inner Life`.** `~/.claude/skills/wiki-update/SKILL.md:27`
+  says to skip that section, but line 82 says to focus on "any filled-in `# Inner Life` / `# Capture`
+  content". (The post no longer mentions Inner Life, so this is a vault-only issue now.) Corey will decide later
+  which way (skip vs. ingest) and fix the matching line. If skipped: private reflection can leak into wiki pages.
+- [ ] **Review the updated Obsidian + Claude post in VS Code, then commit and push to `master`.**
+  `_posts/2026-10-19-Obsidian-Claude-Note-Taking-Setup.md` (renamed from 2026-08-03; restructured
+  to match the Edouard note) is uncommitted. Stage both paths so git records the rename. If skipped:
+  the changes never go live.
 - [ ] **Merge the grief series into one WTOWL post.** The three drafts are marked `next: collapse
   grief series...`, and the cross-links to the old URLs are already gone from the conclusion.
   If skipped: the conclusion's opening still says "final part of my three part set".
-
-## 4. Blockers before merge / deploy
-- [ ] **Commit + push / merge to `master`.** Nothing is committed yet. Merging to `master` removes the
-  9 posts from the live site immediately, and their URLs will 404 (accepted, see 5).
 
 ## 5. Known-and-accepted
 - Old URLs for the 9 removed posts will 404, with no redirects (your choice).
