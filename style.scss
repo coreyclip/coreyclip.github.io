@@ -432,6 +432,9 @@ nav {
                 overflow-x: auto;
                 padding: 1.1em 1.3em;
                 background: transparent;
+                // _highlights.scss sets 0.75rem (12px), too small next to 19px body text
+                font-size: 15px;
+                line-height: 1.6;
             }
 
             // reset the inline-code chip styling; keep the syntax theme's colors
