@@ -8,7 +8,7 @@ tags: technical
 
 *This is an updated version of the guide I first wrote back in August.*
 
-Here is an overview of how I manage **all** of my digital knowledge, and hence much of my life. Our minds are best for thinking; externalizing knowledge into notes helps us think and keep track of what we need to do. Text files are small, so keep a lot of them. Make creating notes, capturing information into them, and organizing them as simple as possible. LLMs are efficient at transforming and regurgitating text, and the more of *your* text you give one to live within, the better it's able to assist you rather than the median person the LLM is trained to work for. Computers are very good at searching through text, and LLMs are very good at organizing text files. So spend more time writing and copy-pasting, and leave the organizing for later. The goal is an extensive body of text that both you and your LLM live within to answer questions, cultivate more knowledge, and extend what you can do.
+Here is an overview of how I manage **all** of my digital knowledge, and hence much of my life. Our minds are best for thinking; externalizing knowledge into notes helps us think and keep track of what we need to do. Text files are small, so keep a lot of them. Make creating notes, capturing information into them, and organizing them as simple as possible. LLMs are efficient at transforming and regurgitating text, and the more of *your* text you give one to live within, the better it's able to assist you, rather than giving you the generic answer it would give anyone. Computers are very good at searching through text, and LLMs are very good at organizing text files. So spend more time writing and copy-pasting, and leave the organizing for later. The goal is an extensive body of text that both you and your LLM live within to answer questions, cultivate more knowledge, and extend what you can do.
 
 **Key ideas / tools**
 - **Tiago Forte's Building a Second Brain (BASB):** note taking as the cultivation of a second body of knowledge outside of your mind. Be greedy when grabbing and storing information, review your notes periodically to come up with new ideas, and organize knowledge by how actionable it is. ([Overview of BASB](https://fortelabs.com/blog/basboverview/)) Tiago Forte himself has landed in the same place as I have regarding pairing LLMs with his notes system. In 2026 he [wrote](https://fortelabs.com/blog/introducing-the-ai-second-brain/) that "Personal Context Management is replacing Personal Knowledge Management," with agent tools like Claude Code finally making the second brain something that does work for you rather than just storing it.
@@ -34,7 +34,7 @@ Here is an overview of how I manage **all** of my digital knowledge, and hence m
 
    This organizes notes by how actionable they are. An active project is something I check and interact with regularly. Areas are periodic. Resources support projects and areas or are things to read later. Archives are, well, archives: rarely touched but kept just in case. At a glance it tells me what shape my life is in, and it tells the LLM what my priorities and interests are.
 
-3. **An LLM-maintained wiki for what I know.** On top of PARA sits a `Wiki/` folder of interlinked pages that Claude writes and maintains from everything in the vault. This follows [Andrej Karpathy's LLM-wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). His key point is that people abandon wikis because the upkeep costs more than they're worth: *"The tedious part of maintaining a knowledge base is not the reading or the thinking, it's the bookkeeping."* An LLM doesn't get bored and doesn't forget cross-references, so the upkeep cost drops to almost nothing. As he puts it, **"Obsidian is the IDE; the LLM is the programmer."** The wiki then becomes the LLM's own notes, where the structure tells it how the people, projects and ideas in your life relate. Context and memory for the LLM end up stored in your file system, in a form both of you can read.
+3. **An LLM-maintained wiki for what I know.** On top of PARA sits a `Wiki/` folder of interlinked pages that Claude writes and maintains from everything in the vault. This follows [Andrej Karpathy's LLM-wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). His key point is that people abandon wikis because the upkeep costs more than they're worth: *"The tedious part of maintaining a knowledge base is not the reading or the thinking — it's the bookkeeping."* An LLM doesn't get bored and doesn't forget cross-references, so the upkeep cost drops consdierably. As he puts it, **"Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase."** The wiki then becomes the LLM's own notes, where the structure tells it how the people, projects and ideas in your life relate. Context and memory for the LLM end up stored in your file system, in a form both of you can read.
 
 The loop is always the same: **capture cheaply → route in batches → distill into the wiki.**
 
@@ -78,7 +78,7 @@ The other important file is the **schema**: a plain markdown file stating the pa
 - **Timelines are append-only and newest-first.** Nothing gets silently rewritten, and every claim traces back to a source page, then to the journal entry it came from.
 - **Every edit updates the page's `last_updated` field and adds a log entry.** That's how staleness gets detected later.
 
-I bootstrapped mine in April 2026 by having Claude backfill my journals going back to mid-2024 in one pass. Six months later it's about 250 pages, and I've written almost none of them by hand. When something is wrong I can fix a page myself, but usually I just tell Claude what to change, and to update its `CLAUDE.md` if the mistake came from a rule.
+I bootstrapped my wiki in April 2026 by having Claude backfill my journals going back to mid-2024. Six months later it's about 250 pages. When something is wrong I can fix a page myself, but usually I just tell Claude what to change, and to update its `CLAUDE.md` if the mistake came from a rule.
 
 ### Why a wiki instead of "just search my notes" (RAG)
 
@@ -99,14 +99,14 @@ The core difference is *when* the work happens. RAG and raw search do it at ques
 | Where the cost goes | Every query | Every ingest and lint, which you review |
 | Main risk | Misses the right chunk | Summaries can miss details, and a bad ingest can bake in an error (source links are the safeguard) |
 
-RAG still wins when the corpus is too big to curate, or when nobody (human or LLM) will keep the wiki maintained. For exact quotes, plain keyword search beats both, and since my raw notes stay in the vault, Claude can still grep them. Karpathy notes that the index-first approach works fine up to a few hundred wiki pages; beyond that, adding a search tool on top is the natural next step. My wiki is about 250 pages built from a few thousand notes, so for a personal vault (or a small team's), the wiki is the better fit.
+RAG still wins when the corpus is too big to curate, or when nobody (human or LLM) will keep the wiki maintained. For exact quotes, plain keyword search beats both, and since my raw notes stay in the vault, Claude can still grep them. Karpathy notes that the index-first approach works well at moderate scale (~100 sources, ~hundreds of pages); beyond that, adding a search tool on top is the natural next step. My wiki is about 250 pages built from a few thousand notes, ingested in weekly batches (about 80 source pages given that I process my daily notes into large weekly and monthly files), so for a personal vault (or a small team's), the wiki is the better fit.
 
 ### The rest of the CODE loop
 
 Tiago's method is [Capture, Organize, Distill, Express](https://fortelabs.com/blog/basboverview/). Everything above leans on the first two. Recently I've handed more of the loop to Claude, each piece as its own skill: one to finish organizing, two for distilling and reusing what I've made:
 
 - **PARA triage.** Loose notes that pile up outside the folders get a proposed home using Tiago's questions in order: is it for a project? an area? a resource? or done? Claude writes the proposals as a form in my daily note; I edit it, and it applies only what I approved.
-- **[Progressive summarization](https://fortelabs.com/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/).** Claude proposes the bold layer (the 10-20% that matters) and drafts a summary at the top of the note. The highlight layer stays mine, because the point of that layer is *my* sense of what resonates. Claude never rewords the source.
+- **[Progressive summarization](https://fortelabs.com/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/).** Claude proposes the bold layer (I aim for no more than 10-20% of the note) and drafts a summary at the top of the note. The highlight layer stays mine, because the point of that layer is *my* sense of what resonates. Claude never rewords the source.
 - **[Intermediate packets](https://fortelabs.com/blog/just-in-time-pm-4-intermediate-packets/).** Reusable work (runbooks, checklists, templates, prompts) gets a `packet` property, and an Obsidian Base turns those into a catalog. Before Claude starts new research, it checks whether I've already made something it can reuse.
 
 ### What it looks like day to day
@@ -128,16 +128,16 @@ All of these are saved as **Claude skills**, which are reusable instruction file
 
 - **Questions get answered from the index.** "What did we decide about pricing and when?" or "Who did I meet at that event and what did they want?" Claude reads the index, opens two or three pages, and answers with links back to the original notes.
 - **Stretching what I can do.** Because Claude already lives in my knowledge base, I don't have to explain much up front. "Build Anki flashcards from the Chinese words I wrote down this week." "Pull everyone I signed up at last week's event who works in a particular industry into a CSV." "Turn these notes into a blog outline in my style." This post was drafted that way, from notes already in the vault.
-- **refined artifacts from piles of research.** Feed in a stack of articles and get back a cited report, a slide deck, or an audio rundown I can listen to. For talks and workshops, Claude pulls the relevant wiki pages into an outline I build the deck from.
+- **Refined artifacts from piles of research.** Feed in a stack of articles and get back a cited report, a slide deck, or an audio rundown I can listen to. For talks and workshops, Claude pulls the relevant wiki pages into an outline I build the deck from.
 - **Topic wikis that keep growing,** like a digital-marketing knowledge base I've forked across a few markets and languages.
 
 ### What to keep in mind
 
 - **The habit matters more than the tools.** If capturing information isn't automatic and easy, the system breaks down. If Obsidian and its plugins are a pain for you, it's time for a different app. Anything that stores notes as plain text (md, txt, org) can work, as long as the LLM can reach the files. 
-- **Batch, don't organize live, and let Claude propose while you approve.** Have it show you a plan before it writes anything. You stay in control, and it learns your structure over time. It's important to recognize that *LLM's do not* come up with better ideas than people, they simply replicate patterns. You should aim to give the LLM a pattern *you decide* on and then drive it to follow the pattern. 
+- **Batch, don't organize live, and let Claude propose while you approve.** Have it show you a plan before it writes anything. You stay in control, and it learns your structure over time. LLMs are best at following patterns, not deciding what you want. Give it a pattern *you* chose, then hold it to that pattern. 
 - **Keep the daily note as the source of truth.** The routed notes and the wiki are *derived*; the chronological journal is the ground truth you can always rebuild from.
 - **Drift is mostly bookkeeping.** My lints rarely find wrong facts. They find an index entry whose page was moved, or a link to a page that was archived. A periodic check of the index against the files on disk catches nearly all of it.
-- **Decide privacy boundaries up front.** Whatever Claude reads is sent to anthropic. Same can be said for OpenAI or Google's models. And even if you trust these entities, prompt injection and other security vulnerabilities are out there and not adequately "solved" so to speak. If the model has access to the internet, I default to considering anything that touches it have the possibility of being made public. Keep genuinely sensitive material (passwords, medical, financial) out of the vault entirely, and set up Claude's permission rules. Or consider running a local model. 
+- **Decide privacy boundaries up front.** Whatever Claude reads is sent to Anthropic. Same can be said for OpenAI or Google's models. And even if you trust these entities, prompt injection and other security vulnerabilities are out there and not adequately "solved" so to speak. If the model has access to the internet, I default to considering anything that touches it have the possibility of being made public. Keep genuinely sensitive material (passwords, medical, financial) out of the vault entirely, and set up Claude's permission rules. Or consider running a local model. 
 - **Start smaller than you think.** Daily notes plus PARA plus a single "route my week" request already gives most of the value. Add the wiki once there's enough material to distill.
 
 ---
@@ -184,10 +184,10 @@ short mode
 
 ### 4. Connect Claude to the vault
 - **Claude Code** (the command-line tool) is what I use. Install it from [claude.com/claude-code](https://claude.com/claude-code) (or `curl -fsSL https://claude.ai/install.sh | bash` on macOS/Linux, `irm https://claude.ai/install.ps1 | iex` in Windows PowerShell), `cd` into your vault and run `claude`. It reads and writes the files in that folder directly, with no plugin needed. I usually run it inside Obsidian through the [Terminal](https://github.com/polyipseity/obsidian-terminal) community plugin.
-- **Claude Desktop** (macOS/Windows, plus a [Linux beta](https://itbrief.co.uk/story/anthropic-launches-claude-desktop-beta-for-linux-users) for Ubuntu and Debian) also works, connected through **Local REST API** and **MCP Tools**.
-- claude.ai in a browser can't reach your files, so it won't work for this.
+- **Claude Desktop** on macOS/Windows also works, connected through **Local REST API** and **MCP Tools**. Desktop now has a [Linux beta](https://itbrief.co.uk/story/anthropic-launches-claude-desktop-beta-for-linux-users) for Ubuntu and Debian too.
+- claude.ai on its own can't reach your files. The exception is Remote Control (below), which drives a Claude Code session running on your machine.
 
-On the go, I leave a Claude Code session running in the vault on my laptop at home, run `/remote-control`, and talk to it from the Claude mobile app alongside Obsidian mobile. The laptop has to stay on and awake.
+On the go, I leave a Claude Code session running in the vault on my laptop at home, run `/remote-control`, and talk to it from the Claude mobile app alongside Obsidian mobile. The laptop has to stay on and awake. 
 
 ### 5. Write a `CLAUDE.md` at the vault root
 Claude Code reads this file automatically at the start of every session. A starter version:
@@ -233,9 +233,9 @@ Karpathy's [gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de
 ### 7. How to get started
 1. **Week 1:** capture only. Put everything in the daily note for each day.
 2. **End of week 1:** ask Claude: *"Read this week's daily notes and propose where each item should be filed in PARA. Show me the plan first."*
-   - You can also import all of your notes from wherever else they live. I just dropped mine which used to be a bunch of .org files in into the folder and asked Claude to organize them after it had processed my first week; that week's notes helped it understand what belonged in my PARA structure.
+   - You can also import all of your notes from wherever else they live. I just dropped mine, which used to be a bunch of .org files, into the folder and asked Claude to organize them after it had processed my first week; that week's notes helped it understand what belonged in my PARA structure.
 3. **End of week 2:** start the wiki. *"Read Wiki/schema.md, then ingest this fortnight's daily notes into the wiki. Propose new entity and concept pages before writing."* Go one week of journals at a time at first so you can check its work.
-4. Once a request feels routine, ask Claude to save it as a skill. Read the file it writes and adjust it. By default skills are saved in a `.claude` folder in your vault.
+4. Once a request feels routine, ask Claude to save it as a skill. Read the file it writes and adjust it. Skills live in the vault's `.claude/skills/` folder, or in `~/.claude/skills/` if you want them available everywhere. Most of mine are in the latter.
 5. Run a lint every week or two.
 
 ### Further reading
