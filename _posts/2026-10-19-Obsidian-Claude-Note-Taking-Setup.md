@@ -167,7 +167,7 @@ Vault/
 Turn on the core **Daily Notes** plugin, point it at `Journals/daily/`, and set this as the template. Also install the **Tasks** community plugin, which the query block under ## Urgent & due needs.
 
 ~~~markdown
-# {{date}}
+# {% raw %}{{date}}{% endraw %}
 
 ## Urgent & due
 ```tasks

@@ -443,6 +443,9 @@ nav {
                 padding: 0;
                 border-radius: 0;
                 font-size: inherit;
+                // the inline-code $navy above is near-invisible on #3f3f3f;
+                // untokenised text (plaintext blocks, markdown prose) uses this
+                color: #dcdccc;
             }
         }
 
