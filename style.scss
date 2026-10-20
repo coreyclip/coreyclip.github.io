@@ -313,6 +313,10 @@ nav {
 
 
 .post {
+    // solid cream panel so text doesn't sit on system.css's dotted body pattern
+    background: #fdfaf0;
+    border-radius: 6px;
+
     blockquote {
         margin: 1.8em 0;
         border-left: 4px solid $ochre;
@@ -346,6 +350,11 @@ nav {
 .post--single {
     max-width: 760px;
     margin: 0 auto;
+    padding: 1.5em 2em;
+
+    @include mobile {
+        padding: 1em;
+    }
 
     // Post title + byline
     > h1 {
